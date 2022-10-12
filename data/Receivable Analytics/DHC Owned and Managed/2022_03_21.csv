@@ -1,0 +1,1258 @@
+tid,location,total,late,late_same,late_duration,late_amount,name
+t0007886,28alg-op,50,32,3,11,191.333333333333,Algonquin
+t0007966,28alg-op,20,10,0,0,0,Algonquin
+t0010101,28alg-op,4,2,1,16,50,Algonquin
+t0010901,28alg-op,38,4,3,8,60,Algonquin
+t0010907,28alg-op,9,4,3,2,94.6666666666667,Algonquin
+t0010920,28alg-op,10,4,1,12,50,Algonquin
+t0010944,28alg-op,50,4,1,6,27,Algonquin
+t0010952,28alg-op,26,0,0,0,0,Algonquin
+t0010971,28alg-op,29,18,4,10,225,Algonquin
+t0012238,28alg-op,54,0,0,0,0,Algonquin
+t0012759,28alg-op,9,3,0,0,0,Algonquin
+t0013251,28alg-op,51,31,11,9,103.113636363636,Algonquin
+t0036957,28alg-op,23,9,1,8,55,Algonquin
+t0007493,01bre-op,23,6,0,0,0,Brewster
+t0007566,01bre-op,14,0,0,0,0,Brewster
+t0007763,01bre-op,65,21,3,17,251.666666666667,Brewster
+t0008175,01bre-op,5,0,0,0,0,Brewster
+t0008439,01bre-op,58,15,2,1.5,134.5,Brewster
+t0008532,01bre-op,59,9,2,8,427.5,Brewster
+t0009073,01bre-op,44,13,2,2.5,96.5,Brewster
+t0009216,01bre-op,9,0,0,0,0,Brewster
+t0009891,01bre-op,62,21,20,6.5,479.2075,Brewster
+t0009895,01bre-op,40,6,2,4.5,95,Brewster
+t0009896,01bre-op,63,8,1,10,238,Brewster
+t0009905,01bre-op,55,15,5,6,529.2,Brewster
+t0009906,01bre-op,17,6,2,6.5,325.5,Brewster
+t0009907,01bre-op,33,0,0,0,0,Brewster
+t0009908,01bre-op,53,12,2,15,197,Brewster
+t0009910,01bre-op,51,8,2,6.5,228.5,Brewster
+t0009911,01bre-op,53,28,5,11,248.226,Brewster
+t0009913,01bre-op,29,18,6,12,270.188333333333,Brewster
+t0009918,01bre-op,59,19,5,6,42.6,Brewster
+t0009919,01bre-op,50,4,1,11,145,Brewster
+t0009922,01bre-op,50,8,2,14.5,133,Brewster
+t0009924,01bre-op,60,22,9,4,288.888888888889,Brewster
+t0009926,01bre-op,48,13,2,8.5,150,Brewster
+t0009930,01bre-op,50,14,4,11,103,Brewster
+t0009932,01bre-op,55,4,1,0,125,Brewster
+t0009934,01bre-op,12,2,0,0,0,Brewster
+t0009935,01bre-op,56,14,1,10,191,Brewster
+t0009936,01bre-op,58,4,2,12,226.5,Brewster
+t0009937,01bre-op,51,18,5,6,601,Brewster
+t0009938,01bre-op,57,7,0,0,0,Brewster
+t0009939,01bre-op,52,17,4,8.5,283,Brewster
+t0009940,01bre-op,69,19,12,3.5,363.166666666667,Brewster
+t0009942,01bre-op,23,13,3,7,353,Brewster
+t0009943,01bre-op,58,6,0,0,0,Brewster
+t0009945,01bre-op,54,7,0,0,0,Brewster
+t0009947,01bre-op,3,0,0,0,0,Brewster
+t0009955,01bre-op,51,3,3,4,163.666666666667,Brewster
+t0009957,01bre-op,31,18,2,2,34,Brewster
+t0009958,01bre-op,58,20,6,10,389.5,Brewster
+t0009959,01bre-op,61,4,0,0,0,Brewster
+t0009961,01bre-op,22,8,7,7,605.928571428571,Brewster
+t0009962,01bre-op,29,4,0,0,0,Brewster
+t0009964,01bre-op,29,34,4,8.5,492.5,Brewster
+t0009965,01bre-op,54,6,3,3,318.166666666667,Brewster
+t0009967,01bre-op,53,1,0,0,0,Brewster
+t0009969,01bre-op,51,16,3,5,173.333333333333,Brewster
+t0009972,01bre-op,28,6,2,3,142,Brewster
+t0009973,01bre-op,58,6,2,3,195.5,Brewster
+t0009974,01bre-op,56,2,1,0,187.51,Brewster
+t0009976,01bre-op,41,17,6,5,187.166666666667,Brewster
+t0009979,01bre-op,59,2,1,1,40,Brewster
+t0009980,01bre-op,41,7,0,0,0,Brewster
+t0009981,01bre-op,36,4,0,0,0,Brewster
+t0009985,01bre-op,56,16,1,6,437,Brewster
+t0009986,01bre-op,58,17,1,5,281.5,Brewster
+t0009987,01bre-op,62,25,9,7,808.777777777778,Brewster
+t0009988,01bre-op,66,2,0,0,0,Brewster
+t0009990,01bre-op,5,3,1,3,105,Brewster
+t0009993,01bre-op,17,5,1,2,180,Brewster
+t0009997,01bre-op,54,15,2,2,97.5,Brewster
+t0010002,01bre-op,12,1,0,0,0,Brewster
+t0010007,01bre-op,54,11,1,8,37,Brewster
+t0010010,01bre-op,8,0,0,0,0,Brewster
+t0010011,01bre-op,56,10,2,1,227,Brewster
+t0010016,01bre-op,56,0,0,0,0,Brewster
+t0010023,01bre-op,53,7,2,2.5,101.5,Brewster
+t0010024,01bre-op,45,3,0,0,0,Brewster
+t0010026,01bre-op,60,22,1,8,1389,Brewster
+t0010027,01bre-op,60,21,18,5,596.666666666667,Brewster
+t0010028,01bre-op,44,12,1,3,158,Brewster
+t0010030,01bre-op,1,0,0,0,0,Brewster
+t0010033,01bre-op,25,9,0,0,0,Brewster
+t0010037,01bre-op,38,14,2,3.5,89.5,Brewster
+t0010039,01bre-op,50,1,1,7,67,Brewster
+t0010040,01bre-op,56,2,0,0,0,Brewster
+t0010041,01bre-op,55,10,0,0,0,Brewster
+t0010045,01bre-op,55,5,0,0,0,Brewster
+t0010046,01bre-op,77,14,2,1,145,Brewster
+t0010048,01bre-op,56,13,3,2,63.0833333333333,Brewster
+t0010049,01bre-op,56,17,4,1.5,256.75,Brewster
+t0010050,01bre-op,55,18,13,3,738.153846153846,Brewster
+t0010051,01bre-op,61,11,4,6,525.5,Brewster
+t0010055,01bre-op,77,19,9,5,184.777777777778,Brewster
+t0010056,01bre-op,26,4,1,0,71,Brewster
+t0010058,01bre-op,50,12,1,9,390,Brewster
+t0010059,01bre-op,51,13,2,11.5,158.5,Brewster
+t0010062,01bre-op,55,10,1,1,155,Brewster
+t0010064,01bre-op,32,0,0,0,0,Brewster
+t0010065,01bre-op,35,2,2,6,90,Brewster
+t0010066,01bre-op,16,1,0,0,0,Brewster
+t0010067,01bre-op,53,6,0,0,0,Brewster
+t0010073,01bre-op,20,14,0,0,0,Brewster
+t0010075,01bre-op,56,22,7,5,176,Brewster
+t0010076,01bre-op,54,12,1,1,97,Brewster
+t0010081,01bre-op,52,2,0,0,0,Brewster
+t0010087,01bre-op,55,7,1,12,163,Brewster
+t0010088,01bre-op,55,8,2,11,126.485,Brewster
+t0010091,01bre-op,56,2,0,0,0,Brewster
+t0010093,01bre-op,57,12,3,2,112.666666666667,Brewster
+t0010095,01bre-op,55,11,3,0,372.333333333333,Brewster
+t0010096,01bre-op,63,20,8,5,366,Brewster
+t0010097,01bre-op,15,6,1,20,48,Brewster
+t0010098,01bre-op,58,9,2,1,198.5,Brewster
+t0010100,01bre-op,31,5,2,3.5,156.5,Brewster
+t0010104,01bre-op,50,20,6,4.5,178.833333333333,Brewster
+t0010106,01bre-op,65,4,0,0,0,Brewster
+t0010110,01bre-op,36,13,4,10.5,215.7525,Brewster
+t0010112,01bre-op,7,2,0,0,0,Brewster
+t0010114,01bre-op,54,18,0,0,0,Brewster
+t0010115,01bre-op,52,6,0,0,0,Brewster
+t0010116,01bre-op,57,11,3,5,139.333333333333,Brewster
+t0010121,01bre-op,54,16,5,12,377,Brewster
+t0010128,01bre-op,54,14,5,3,238.6,Brewster
+t0010132,01bre-op,52,18,1,4,46,Brewster
+t0010133,01bre-op,53,6,0,0,0,Brewster
+t0010136,01bre-op,54,11,0,0,0,Brewster
+t0010138,01bre-op,54,27,25,7,355.526,Brewster
+t0010141,01bre-op,55,4,0,0,0,Brewster
+t0010143,01bre-op,64,28,7,4,118,Brewster
+t0010147,01bre-op,63,18,4,1.5,125,Brewster
+t0010153,01bre-op,55,9,3,1,230.666666666667,Brewster
+t0010160,01bre-op,6,3,1,8,240,Brewster
+t0010445,01bre-op,8,0,0,0,0,Brewster
+t0010835,01bre-op,24,1,1,12,100,Brewster
+t0010906,01bre-op,57,8,4,5.5,62.75,Brewster
+t0010909,01bre-op,61,1,0,0,0,Brewster
+t0011387,01bre-op,4,2,0,0,0,Brewster
+t0011388,01bre-op,42,3,0,0,0,Brewster
+t0011394,01bre-op,15,7,1,1,158.13,Brewster
+t0011495,01bre-op,8,0,0,0,0,Brewster
+t0011713,01bre-op,67,14,3,6,147.833333333333,Brewster
+t0011808,01bre-op,58,6,2,14.5,41.5,Brewster
+t0011893,01bre-op,43,16,6,6,306.5,Brewster
+t0011948,01bre-op,42,14,4,9.5,172.75,Brewster
+t0011979,01bre-op,18,3,1,12,261,Brewster
+t0011997,01bre-op,37,6,0,0,0,Brewster
+t0012002,01bre-op,31,11,2,3.5,414.5,Brewster
+t0012161,01bre-op,61,8,6,6.5,281.666666666667,Brewster
+t0012166,01bre-op,11,0,0,0,0,Brewster
+t0012172,01bre-op,3,0,0,0,0,Brewster
+t0012209,01bre-op,45,7,2,2,46,Brewster
+t0012295,01bre-op,51,9,4,14,255.5,Brewster
+t0012362,01bre-op,59,0,0,0,0,Brewster
+t0012409,01bre-op,5,12,0,0,0,Brewster
+t0012414,01bre-op,23,11,0,0,0,Brewster
+t0012416,01bre-op,7,0,0,0,0,Brewster
+t0012434,01bre-op,20,0,0,0,0,Brewster
+t0012491,01bre-op,56,1,0,0,0,Brewster
+t0012494,01bre-op,32,6,0,0,0,Brewster
+t0012495,01bre-op,18,6,2,2,74.5,Brewster
+t0012522,01bre-op,60,16,5,16,316.2,Brewster
+t0012561,01bre-op,23,10,7,5,65,Brewster
+t0012572,01bre-op,17,0,0,0,0,Brewster
+t0012713,01bre-op,3,6,0,0,0,Brewster
+t0012735,01bre-op,18,5,1,1,100,Brewster
+t0013060,01bre-op,56,13,8,13,380.375,Brewster
+t0013241,01bre-op,58,18,1,11,50,Brewster
+t0013244,01bre-op,57,0,0,0,0,Brewster
+t0013422,01bre-op,38,4,1,13,700,Brewster
+t0013536,01bre-op,50,25,10,11.5,355.626,Brewster
+t0013931,01bre-op,39,13,9,4,133.555555555556,Brewster
+t0013972,01bre-op,14,0,0,0,0,Brewster
+t0014321,01bre-op,60,0,0,0,0,Brewster
+t0014511,01bre-op,26,0,0,0,0,Brewster
+t0014637,01bre-op,20,9,4,11.5,318,Brewster
+t0014692,01bre-op,53,19,6,5,402.666666666667,Brewster
+t0014700,01bre-op,58,23,7,9,222.285714285714,Brewster
+t0014706,01bre-op,41,30,0,0,0,Brewster
+t0014788,01bre-op,50,3,1,20,245,Brewster
+t0014828,01bre-op,59,3,1,6,158,Brewster
+t0015021,01bre-op,55,18,3,11,106.666666666667,Brewster
+t0015031,01bre-op,84,21,7,4,188.571428571429,Brewster
+t0015200,01bre-op,18,6,0,0,0,Brewster
+t0015268,01bre-op,60,32,16,7.5,255.1875,Brewster
+t0015269,01bre-op,84,23,1,18,142,Brewster
+t0015300,01bre-op,54,9,0,0,0,Brewster
+t0015302,01bre-op,69,19,4,1.5,357.75,Brewster
+t0015547,01bre-op,44,6,1,6,471,Brewster
+t0015570,01bre-op,67,25,5,4,306.8,Brewster
+t0015617,01bre-op,23,0,0,0,0,Brewster
+t0015625,01bre-op,23,8,1,12,86,Brewster
+t0015673,01bre-op,70,16,4,6,210.75,Brewster
+t0015858,01bre-op,26,3,1,11,75,Brewster
+t0015860,01bre-op,1,0,0,0,0,Brewster
+t0015924,01bre-op,57,17,4,13.5,152.5,Brewster
+t0015925,01bre-op,29,6,1,7,106,Brewster
+t0015936,01bre-op,40,10,4,4,499.1225,Brewster
+t0015944,01bre-op,22,1,0,0,0,Brewster
+t0015979,01bre-op,50,16,4,2.5,323.5,Brewster
+t0016008,01bre-op,56,2,0,0,0,Brewster
+t0016014,01bre-op,61,16,9,7,114.777777777778,Brewster
+t0016040,01bre-op,14,0,0,0,0,Brewster
+t0016458,01bre-op,56,8,1,17,500,Brewster
+t0016466,01bre-op,49,14,1,7,120,Brewster
+t0017536,01bre-op,21,0,0,0,0,Brewster
+t0017581,01bre-op,30,16,8,15.5,278.125,Brewster
+t0017645,01bre-op,26,8,3,9,96.3333333333333,Brewster
+t0017648,01bre-op,29,0,0,0,0,Brewster
+t0017683,01bre-op,1,3,2,12.5,45,Brewster
+t0017840,01bre-op,21,1,1,-1,1107,Brewster
+t0017879,01bre-op,33,8,3,1,214,Brewster
+t0017882,01bre-op,34,5,1,6,6,Brewster
+t0017988,01bre-op,34,0,0,0,0,Brewster
+t0018056,01bre-op,28,4,1,1,191,Brewster
+t0018239,01bre-op,24,6,2,9.5,92,Brewster
+t0018322,01bre-op,39,5,0,0,0,Brewster
+t0018345,01bre-op,32,8,0,0,0,Brewster
+t0018422,01bre-op,33,10,5,9,132.6,Brewster
+t0018478,01bre-op,34,11,3,9,175.333333333333,Brewster
+t0033382,01bre-op,17,0,0,0,0,Brewster
+t0036908,01bre-op,34,9,2,3.5,481,Brewster
+t0036980,01bre-op,31,7,1,-1,693,Brewster
+t0037135,01bre-op,5,0,0,0,0,Brewster
+t0037321,01bre-op,21,0,0,0,0,Brewster
+t0037323,01bre-op,16,0,0,0,0,Brewster
+t0037325,01bre-op,24,6,2,5.5,216.5,Brewster
+t0038238,01bre-op,14,0,0,0,0,Brewster
+t0038387,01bre-op,14,0,0,0,0,Brewster
+t0038391,01bre-op,19,0,0,0,0,Brewster
+t0038540,01bre-op,14,0,0,0,0,Brewster
+t0038913,01bre-op,15,0,0,0,0,Brewster
+t0038949,01bre-op,14,0,0,0,0,Brewster
+t0046807,01bre-op,6,0,0,0,0,Brewster
+t0007107,03dig-op,18,0,0,0,0,Diggs
+t0007255,03dig-op,53,10,1,9,194,Diggs
+t0007395,03dig-op,50,0,0,0,0,Diggs
+t0007396,03dig-op,41,12,1,8,131,Diggs
+t0007499,03dig-op,70,15,2,6.5,229.5,Diggs
+t0007516,03dig-op,60,20,4,5.5,106.5,Diggs
+t0007523,03dig-op,51,21,9,6,261.444444444444,Diggs
+t0007540,03dig-op,50,0,0,0,0,Diggs
+t0007608,03dig-op,52,2,1,3,127,Diggs
+t0007698,03dig-op,10,6,1,13,200,Diggs
+t0007739,03dig-op,25,22,13,10,527.153846153846,Diggs
+t0007786,03dig-op,48,10,5,4,101,Diggs
+t0007916,03dig-op,50,6,0,0,0,Diggs
+t0008001,03dig-op,53,7,3,3,445,Diggs
+t0008043,03dig-op,51,0,0,0,0,Diggs
+t0008044,03dig-op,13,0,0,0,0,Diggs
+t0008063,03dig-op,50,6,3,4,50,Diggs
+t0008067,03dig-op,50,2,1,7,163,Diggs
+t0008072,03dig-op,52,6,0,0,0,Diggs
+t0008135,03dig-op,50,11,1,20,120,Diggs
+t0008168,03dig-op,55,16,11,13,304.272727272727,Diggs
+t0008170,03dig-op,41,0,0,0,0,Diggs
+t0008171,03dig-op,50,0,0,0,0,Diggs
+t0008176,03dig-op,48,17,1,2,377,Diggs
+t0008210,03dig-op,50,6,2,10,142,Diggs
+t0008223,03dig-op,5,0,0,0,0,Diggs
+t0008252,03dig-op,35,13,4,9.5,312.25,Diggs
+t0008328,03dig-op,19,1,0,0,0,Diggs
+t0008356,03dig-op,50,26,5,4,337.8,Diggs
+t0008368,03dig-op,1,0,0,0,0,Diggs
+t0008378,03dig-op,45,6,1,4,152,Diggs
+t0008387,03dig-op,22,9,2,8.5,180.5,Diggs
+t0008399,03dig-op,57,20,5,11,320,Diggs
+t0008404,03dig-op,59,1,0,0,0,Diggs
+t0008505,03dig-op,50,25,10,8.5,114.7,Diggs
+t0008516,03dig-op,6,0,0,0,0,Diggs
+t0009191,03dig-op,45,3,2,1,135.5,Diggs
+t0010817,03dig-op,23,0,0,0,0,Diggs
+t0011346,03dig-op,53,0,0,0,0,Diggs
+t0011425,03dig-op,20,10,2,16.5,114,Diggs
+t0012051,03dig-op,56,6,1,9,171,Diggs
+t0012277,03dig-op,17,1,1,2,209,Diggs
+t0012396,03dig-op,52,12,2,10,261,Diggs
+t0012449,03dig-op,58,41,10,7,168.7,Diggs
+t0012488,03dig-op,27,14,4,7,62.25,Diggs
+t0012623,03dig-op,8,10,3,13,74.3333333333333,Diggs
+t0012626,03dig-op,44,14,7,5,124,Diggs
+t0013104,03dig-op,8,0,0,0,0,Diggs
+t0013396,03dig-op,50,0,0,0,0,Diggs
+t0013450,03dig-op,56,0,0,0,0,Diggs
+t0013487,03dig-op,50,0,0,0,0,Diggs
+t0013803,03dig-op,24,0,0,0,0,Diggs
+t0013923,03dig-op,9,0,0,0,0,Diggs
+t0014099,03dig-op,51,0,0,0,0,Diggs
+t0014214,03dig-op,12,0,0,0,0,Diggs
+t0014406,03dig-op,59,0,0,0,0,Diggs
+t0014869,03dig-op,20,6,2,2,265,Diggs
+t0014968,03dig-op,52,0,0,0,0,Diggs
+t0015190,03dig-op,51,0,0,0,0,Diggs
+t0015621,03dig-op,52,0,0,0,0,Diggs
+t0015622,03dig-op,58,0,0,0,0,Diggs
+t0015630,03dig-op,39,0,0,0,0,Diggs
+t0015656,03dig-op,55,0,0,0,0,Diggs
+t0015919,03dig-op,56,2,1,3,155,Diggs
+t0015983,03dig-op,3,0,0,0,0,Diggs
+t0015985,03dig-op,53,18,12,5,187.666666666667,Diggs
+t0016158,03dig-op,46,2,0,0,0,Diggs
+t0016168,03dig-op,11,2,2,6,273,Diggs
+t0016169,03dig-op,24,11,2,12,190,Diggs
+t0016180,03dig-op,12,13,8,10.5,180,Diggs
+t0016294,03dig-op,17,9,3,3,223,Diggs
+t0016888,03dig-op,5,5,2,7,100.5,Diggs
+t0016904,03dig-op,38,14,1,12,291,Diggs
+t0016926,03dig-op,53,23,5,5,407.2,Diggs
+t0021123,03dig-op,9,6,2,2.5,50,Diggs
+t0021336,03dig-op,7,0,0,0,0,Diggs
+t0021377,03dig-op,36,22,4,12.5,186.75,Diggs
+t0021412,03dig-op,5,8,0,0,0,Diggs
+t0021430,03dig-op,18,5,5,4,82,Diggs
+t0021434,03dig-op,36,9,5,2,322.4,Diggs
+t0021497,03dig-op,33,0,0,0,0,Diggs
+t0021717,03dig-op,26,1,1,6,68,Diggs
+t0021732,03dig-op,37,18,6,13,382.666666666667,Diggs
+t0021736,03dig-op,36,0,0,0,0,Diggs
+t0021789,03dig-op,19,4,0,0,0,Diggs
+t0034194,03dig-op,18,7,0,0,0,Diggs
+t0007091,03for-op,51,12,8,3.5,325.375,Forest Park Place
+t0007101,03for-op,50,18,7,14,407.285714285714,Forest Park Place
+t0007194,03for-op,51,0,0,0,0,Forest Park Place
+t0007195,03for-op,61,8,0,0,0,Forest Park Place
+t0007247,03for-op,55,4,2,6,296,Forest Park Place
+t0007446,03for-op,62,36,1,20,65,Forest Park Place
+t0007515,03for-op,50,1,1,4,3,Forest Park Place
+t0007517,03for-op,50,0,0,0,0,Forest Park Place
+t0007569,03for-op,50,0,0,0,0,Forest Park Place
+t0007601,03for-op,50,14,0,0,0,Forest Park Place
+t0007650,03for-op,56,0,0,0,0,Forest Park Place
+t0007671,03for-op,50,0,0,0,0,Forest Park Place
+t0007681,03for-op,51,6,1,3,198,Forest Park Place
+t0007703,03for-op,50,3,1,2,80,Forest Park Place
+t0007989,03for-op,60,0,0,0,0,Forest Park Place
+t0007992,03for-op,51,19,3,2,149,Forest Park Place
+t0008000,03for-op,50,14,2,2,440,Forest Park Place
+t0008004,03for-op,50,0,0,0,0,Forest Park Place
+t0008021,03for-op,50,3,2,13,249,Forest Park Place
+t0008033,03for-op,58,31,5,14,396.962,Forest Park Place
+t0008083,03for-op,50,2,1,13,215,Forest Park Place
+t0008085,03for-op,50,33,13,4,218.461538461538,Forest Park Place
+t0008088,03for-op,50,25,0,0,0,Forest Park Place
+t0008103,03for-op,52,2,0,0,0,Forest Park Place
+t0008169,03for-op,50,0,0,0,0,Forest Park Place
+t0008189,03for-op,50,10,0,0,0,Forest Park Place
+t0008357,03for-op,50,8,7,3,278.857142857143,Forest Park Place
+t0008363,03for-op,50,4,1,2,225,Forest Park Place
+t0008377,03for-op,51,8,4,8,128.75,Forest Park Place
+t0008391,03for-op,51,3,0,0,0,Forest Park Place
+t0008400,03for-op,51,45,7,2,50.2857142857143,Forest Park Place
+t0011030,03for-op,50,18,4,10.5,132.25,Forest Park Place
+t0011220,03for-op,50,12,3,5,168.666666666667,Forest Park Place
+t0011434,03for-op,62,27,2,7,134.5,Forest Park Place
+t0011567,03for-op,50,6,1,1,221,Forest Park Place
+t0011669,03for-op,50,0,0,0,0,Forest Park Place
+t0011817,03for-op,50,2,0,0,0,Forest Park Place
+t0011933,03for-op,50,8,0,0,0,Forest Park Place
+t0012089,03for-op,63,10,3,10,186.333333333333,Forest Park Place
+t0012265,03for-op,54,34,15,7,186,Forest Park Place
+t0012271,03for-op,50,14,1,4,219,Forest Park Place
+t0012286,03for-op,52,23,11,6,656.727272727273,Forest Park Place
+t0012287,03for-op,50,19,6,4,169.666666666667,Forest Park Place
+t0012288,03for-op,50,24,3,7,95.3333333333333,Forest Park Place
+t0012440,03for-op,62,29,11,4,269.754545454545,Forest Park Place
+t0012441,03for-op,50,2,1,2,202,Forest Park Place
+t0012825,03for-op,50,0,0,0,0,Forest Park Place
+t0013103,03for-op,50,12,2,9.5,108,Forest Park Place
+t0013139,03for-op,50,0,0,0,0,Forest Park Place
+t0013201,03for-op,50,7,1,10,52,Forest Park Place
+t0013392,03for-op,50,1,0,0,0,Forest Park Place
+t0013503,03for-op,50,0,0,0,0,Forest Park Place
+t0014510,03for-op,53,13,5,15,244.4,Forest Park Place
+t0014558,03for-op,53,0,0,0,0,Forest Park Place
+t0014682,03for-op,52,0,0,0,0,Forest Park Place
+t0014851,03for-op,50,0,0,0,0,Forest Park Place
+t0014853,03for-op,51,0,0,0,0,Forest Park Place
+t0015198,03for-op,52,0,0,0,0,Forest Park Place
+t0015558,03for-op,50,0,0,0,0,Forest Park Place
+t0015566,03for-op,53,0,0,0,0,Forest Park Place
+t0015616,03for-op,50,0,0,0,0,Forest Park Place
+t0015676,03for-op,64,0,0,0,0,Forest Park Place
+t0015699,03for-op,50,0,0,0,0,Forest Park Place
+t0015767,03for-op,50,0,0,0,0,Forest Park Place
+t0015926,03for-op,61,0,0,0,0,Forest Park Place
+t0016002,03for-op,26,4,4,5,147.25,Forest Park Place
+t0016279,03for-op,45,8,0,0,0,Forest Park Place
+t0016288,03for-op,45,0,0,0,0,Forest Park Place
+t0016452,03for-op,58,26,3,13,415.333333333333,Forest Park Place
+t0016488,03for-op,43,10,1,5,19,Forest Park Place
+t0019975,03for-op,34,2,1,7,71.98,Forest Park Place
+t0022023,03for-op,26,6,1,2,231,Forest Park Place
+t0022024,03for-op,25,4,1,7,15,Forest Park Place
+t0022113,03for-op,27,1,0,0,0,Forest Park Place
+t0022128,03for-op,22,2,0,0,0,Forest Park Place
+t0022209,03for-op,23,12,2,13,364,Forest Park Place
+t0022221,03for-op,29,20,4,8,272.75,Forest Park Place
+t0022290,03for-op,38,27,2,15,224,Forest Park Place
+t0022333,03for-op,38,11,5,15,331.6,Forest Park Place
+t0022369,03for-op,27,9,1,10,208,Forest Park Place
+t0024319,03for-op,23,0,0,0,0,Forest Park Place
+t0034308,03for-op,26,8,0,0,0,Forest Park Place
+t0034309,03for-op,23,11,1,17,226,Forest Park Place
+t0034355,03for-op,26,18,1,1,119,Forest Park Place
+t0037033,03for-op,18,0,0,0,0,Forest Park Place
+t0037663,03for-op,18,0,0,0,0,Forest Park Place
+t0037665,03for-op,17,0,0,0,0,Forest Park Place
+t0037668,03for-op,19,0,0,0,0,Forest Park Place
+a0014176,29gre-op,29,0,0,0,0,Greenbrooke
+t0007356,29gre-op,21,9,7,10,260,Greenbrooke
+t0007910,29gre-op,50,0,0,0,0,Greenbrooke
+t0009963,29gre-op,23,2,1,9,122,Greenbrooke
+t0011018,29gre-op,69,31,7,4,99.8571428571429,Greenbrooke
+t0011019,29gre-op,19,10,0,0,0,Greenbrooke
+t0011020,29gre-op,50,6,0,0,0,Greenbrooke
+t0011021,29gre-op,59,3,1,19,443,Greenbrooke
+t0011022,29gre-op,50,9,2,19,403,Greenbrooke
+t0011031,29gre-op,50,7,0,0,0,Greenbrooke
+t0011038,29gre-op,50,14,1,9,366,Greenbrooke
+t0011042,29gre-op,55,19,5,2,247,Greenbrooke
+t0011043,29gre-op,20,7,0,0,0,Greenbrooke
+t0011048,29gre-op,2,1,0,0,0,Greenbrooke
+t0011051,29gre-op,50,3,0,0,0,Greenbrooke
+t0011052,29gre-op,51,5,0,0,0,Greenbrooke
+t0011053,29gre-op,50,4,1,10,17,Greenbrooke
+t0011054,29gre-op,50,1,1,2,175,Greenbrooke
+t0011055,29gre-op,61,4,1,19,448,Greenbrooke
+t0011058,29gre-op,50,4,0,0,0,Greenbrooke
+t0011059,29gre-op,45,20,5,6,239.2,Greenbrooke
+t0011060,29gre-op,50,11,1,18,184,Greenbrooke
+t0011061,29gre-op,25,11,4,4.5,467.5,Greenbrooke
+t0011062,29gre-op,50,27,11,3,638.636363636364,Greenbrooke
+t0011091,29gre-op,57,6,1,18,227,Greenbrooke
+t0011651,29gre-op,52,4,1,2,194,Greenbrooke
+t0011783,29gre-op,50,5,1,2,144,Greenbrooke
+t0012001,29gre-op,61,0,0,0,0,Greenbrooke
+t0012770,29gre-op,51,0,0,0,0,Greenbrooke
+t0013088,29gre-op,11,0,0,0,0,Greenbrooke
+t0013099,29gre-op,52,0,0,0,0,Greenbrooke
+t0015782,29gre-op,56,0,0,0,0,Greenbrooke
+t0015785,29gre-op,50,23,5,4,336,Greenbrooke
+t0015849,29gre-op,30,5,2,5.5,130,Greenbrooke
+t0015988,29gre-op,48,12,6,14,207.166666666667,Greenbrooke
+t0016468,29gre-op,54,37,9,17,317.222222222222,Greenbrooke
+t0016772,29gre-op,42,17,6,5.5,250,Greenbrooke
+t0016844,29gre-op,11,0,0,0,0,Greenbrooke
+t0016908,29gre-op,44,12,1,12,100,Greenbrooke
+t0007268,11riv-op,50,20,0,0,0,Riverbend
+t0007271,11riv-op,50,1,0,0,0,Riverbend
+t0007274,11riv-op,50,3,2,2,220,Riverbend
+t0007275,11riv-op,51,0,0,0,0,Riverbend
+t0007281,11riv-op,50,9,2,-1.5,284.5,Riverbend
+t0007285,11riv-op,50,16,0,0,0,Riverbend
+t0007287,11riv-op,59,17,10,3,410.2,Riverbend
+t0007290,11riv-op,50,0,0,0,0,Riverbend
+t0007295,11riv-op,61,20,0,0,0,Riverbend
+t0007296,11riv-op,52,41,5,17,348.2,Riverbend
+t0007297,11riv-op,50,4,0,0,0,Riverbend
+t0007302,11riv-op,67,22,6,5,292.166666666667,Riverbend
+t0007303,11riv-op,50,2,0,0,0,Riverbend
+t0007304,11riv-op,50,4,0,0,0,Riverbend
+t0007306,11riv-op,74,30,0,0,0,Riverbend
+t0007307,11riv-op,50,0,0,0,0,Riverbend
+t0007312,11riv-op,50,4,2,9,28.5,Riverbend
+t0007317,11riv-op,50,18,1,19,371,Riverbend
+t0007325,11riv-op,51,2,0,0,0,Riverbend
+t0007329,11riv-op,52,0,0,0,0,Riverbend
+t0007331,11riv-op,53,6,0,0,0,Riverbend
+t0007338,11riv-op,50,20,18,4.5,232.944444444444,Riverbend
+t0007339,11riv-op,50,0,0,0,0,Riverbend
+t0007448,11riv-op,50,0,0,0,0,Riverbend
+t0007757,11riv-op,62,0,0,0,0,Riverbend
+t0007813,11riv-op,50,0,0,0,0,Riverbend
+t0007881,11riv-op,50,0,0,0,0,Riverbend
+t0008011,11riv-op,50,22,1,-7,525,Riverbend
+t0008195,11riv-op,50,17,0,0,0,Riverbend
+t0008407,11riv-op,50,0,0,0,0,Riverbend
+t0009166,11riv-op,39,23,11,5,246.454545454545,Riverbend
+t0011088,11riv-op,52,8,2,7.5,254,Riverbend
+t0011089,11riv-op,50,5,2,6,45,Riverbend
+t0011632,11riv-op,50,10,1,12,5,Riverbend
+t0011745,11riv-op,50,5,1,4,325,Riverbend
+t0011746,11riv-op,50,17,2,11.5,115,Riverbend
+t0011769,11riv-op,50,4,0,0,0,Riverbend
+t0012086,11riv-op,51,18,7,13,445.714285714286,Riverbend
+t0012297,11riv-op,61,6,1,9,446,Riverbend
+t0012380,11riv-op,50,29,1,19,243,Riverbend
+t0012666,11riv-op,70,27,5,15,435.8,Riverbend
+t0013014,11riv-op,51,3,1,2,39,Riverbend
+t0013272,11riv-op,13,0,0,0,0,Riverbend
+t0013300,11riv-op,63,17,1,2,232,Riverbend
+t0013370,11riv-op,50,0,0,0,0,Riverbend
+t0013551,11riv-op,50,2,0,0,0,Riverbend
+t0014038,11riv-op,50,23,3,13,379.666666666667,Riverbend
+t0014790,11riv-op,63,12,1,2,248,Riverbend
+t0015450,11riv-op,50,14,0,0,0,Riverbend
+t0015551,11riv-op,50,20,0,0,0,Riverbend
+t0015579,11riv-op,50,0,0,0,0,Riverbend
+t0015623,11riv-op,51,26,1,1,324,Riverbend
+t0015801,11riv-op,50,16,0,0,0,Riverbend
+t0015802,11riv-op,54,7,1,13,25,Riverbend
+t0015883,11riv-op,50,10,2,2,222.5,Riverbend
+t0015923,11riv-op,49,2,0,0,0,Riverbend
+t0015981,11riv-op,48,14,0,0,0,Riverbend
+t0016119,11riv-op,47,3,1,19,116,Riverbend
+t0016120,11riv-op,46,0,0,0,0,Riverbend
+t0016121,11riv-op,46,4,1,6,360,Riverbend
+t0016479,11riv-op,43,4,2,9,74.5,Riverbend
+t0016669,11riv-op,41,4,1,-7,225,Riverbend
+t0016716,11riv-op,41,0,0,0,0,Riverbend
+t0020094,11riv-op,24,0,0,0,0,Riverbend
+t0023958,11riv-op,6,0,0,0,0,Riverbend
+t0024024,11riv-op,22,0,0,0,0,Riverbend
+t0025159,11riv-op,13,0,0,0,0,Riverbend
+t0025194,11riv-op,23,0,0,0,0,Riverbend
+t0025197,11riv-op,30,19,2,6.5,136.5,Riverbend
+t0025255,11riv-op,14,0,0,0,0,Riverbend
+t0025288,11riv-op,25,0,0,0,0,Riverbend
+t0025348,11riv-op,17,0,0,0,0,Riverbend
+t0025358,11riv-op,32,4,0,0,0,Riverbend
+t0025371,11riv-op,33,13,1,20,225,Riverbend
+t0025425,11riv-op,31,7,0,0,0,Riverbend
+t0025444,11riv-op,32,7,0,0,0,Riverbend
+t0025481,11riv-op,35,14,2,5,196.5,Riverbend
+t0025523,11riv-op,25,25,0,0,0,Riverbend
+t0025532,11riv-op,8,0,0,0,0,Riverbend
+t0037651,11riv-op,13,2,0,0,0,Riverbend
+t0039016,11riv-op,3,0,0,0,0,Riverbend
+t0061337,11riv-op,5,0,0,0,0,Riverbend
+t0007096,14ssc-op,61,33,18,4,307.722222222222,Scattered Sites Central
+t0007119,14ssc-op,52,39,9,9,229.888888888889,Scattered Sites Central
+t0007127,14ssc-op,55,31,18,4,341.277777777778,Scattered Sites Central
+t0007145,14ssc-op,60,3,0,0,0,Scattered Sites Central
+t0007160,14ssc-op,65,34,20,8,625.8,Scattered Sites Central
+t0007236,14ssc-op,58,1,0,0,0,Scattered Sites Central
+t0007340,14ssc-op,57,18,4,5.5,249,Scattered Sites Central
+t0007366,14ssc-op,54,9,1,17,108,Scattered Sites Central
+t0007367,14ssc-op,50,23,6,5,467.166666666667,Scattered Sites Central
+t0007486,14ssc-op,37,24,1,1,303,Scattered Sites Central
+t0007567,14ssc-op,60,24,13,2,532.769230769231,Scattered Sites Central
+t0007603,14ssc-op,38,34,1,5,306,Scattered Sites Central
+t0007664,14ssc-op,17,1,0,0,0,Scattered Sites Central
+t0007688,14ssc-op,54,9,0,0,0,Scattered Sites Central
+t0007691,14ssc-op,71,4,2,15.5,81.5,Scattered Sites Central
+t0007783,14ssc-op,58,0,0,0,0,Scattered Sites Central
+t0007809,14ssc-op,53,15,2,6,210,Scattered Sites Central
+t0007885,14ssc-op,44,11,7,15,481.428571428571,Scattered Sites Central
+t0007947,14ssc-op,57,29,12,8.5,295,Scattered Sites Central
+t0007962,14ssc-op,67,29,9,4,206.222222222222,Scattered Sites Central
+t0007982,14ssc-op,74,22,11,3,340.818181818182,Scattered Sites Central
+t0008008,14ssc-op,50,29,12,6.5,435.833333333333,Scattered Sites Central
+t0008091,14ssc-op,50,31,17,8,303.382352941176,Scattered Sites Central
+t0008221,14ssc-op,23,12,0,0,0,Scattered Sites Central
+t0008291,14ssc-op,28,8,5,14,182.2,Scattered Sites Central
+t0008389,14ssc-op,68,12,4,14.5,652.5,Scattered Sites Central
+t0008412,14ssc-op,56,35,2,5,183,Scattered Sites Central
+t0008422,14ssc-op,55,17,0,0,0,Scattered Sites Central
+t0010038,14ssc-op,13,2,0,0,0,Scattered Sites Central
+t0012078,14ssc-op,95,0,0,0,0,Scattered Sites Central
+t0012867,14ssc-op,67,16,7,9,431.428571428571,Scattered Sites Central
+t0023175,14ssc-op,36,21,4,1.5,444.25,Scattered Sites Central
+t0024536,14ssc-op,12,1,0,0,0,Scattered Sites Central
+t0024703,14ssc-op,7,4,0,0,0,Scattered Sites Central
+t0038148,14ssc-op,9,7,4,8.5,161.25,Scattered Sites Central
+t0038376,14ssc-op,27,16,0,0,0,Scattered Sites Central
+b0013169,13sse-op,23,10,1,9,279,Scattered Sites East
+t0007086,13sse-op,56,9,3,6,113.333333333333,Scattered Sites East
+t0007097,13sse-op,55,3,3,2,157.333333333333,Scattered Sites East
+t0007108,13sse-op,38,23,11,11,447.090909090909,Scattered Sites East
+t0007118,13sse-op,61,9,1,2,535,Scattered Sites East
+t0007185,13sse-op,61,29,12,8.5,249.166666666667,Scattered Sites East
+t0007186,13sse-op,58,10,1,19,31,Scattered Sites East
+t0007196,13sse-op,50,0,0,0,0,Scattered Sites East
+t0007249,13sse-op,48,21,11,2,124.181818181818,Scattered Sites East
+t0007251,13sse-op,50,9,2,3.5,122.5,Scattered Sites East
+t0007252,13sse-op,57,26,9,14,486.555555555556,Scattered Sites East
+t0007386,13sse-op,47,18,2,3,426,Scattered Sites East
+t0007449,13sse-op,70,39,7,10,449.928571428571,Scattered Sites East
+t0007473,13sse-op,55,33,16,11,267.375,Scattered Sites East
+t0007491,13sse-op,52,0,0,0,0,Scattered Sites East
+t0007565,13sse-op,44,0,0,0,0,Scattered Sites East
+t0007595,13sse-op,72,28,12,4.5,407.416666666667,Scattered Sites East
+t0007600,13sse-op,56,16,0,0,0,Scattered Sites East
+t0007605,13sse-op,60,28,10,7.5,275.8,Scattered Sites East
+t0007610,13sse-op,79,38,10,6,920,Scattered Sites East
+t0007692,13sse-op,6,0,0,0,0,Scattered Sites East
+t0007718,13sse-op,49,19,7,3,682.928571428571,Scattered Sites East
+t0007725,13sse-op,39,50,5,12,263.6,Scattered Sites East
+t0007727,13sse-op,53,24,11,2,544.636363636364,Scattered Sites East
+t0007732,13sse-op,79,31,12,6.5,328.833333333333,Scattered Sites East
+t0007738,13sse-op,53,21,11,5,99.1818181818182,Scattered Sites East
+t0007752,13sse-op,55,0,0,0,0,Scattered Sites East
+t0007753,13sse-op,55,8,1,6,306,Scattered Sites East
+t0007803,13sse-op,42,26,0,0,0,Scattered Sites East
+t0007860,13sse-op,12,16,1,5,180,Scattered Sites East
+t0007874,13sse-op,54,13,1,2,191,Scattered Sites East
+t0007878,13sse-op,52,19,5,5,140.6,Scattered Sites East
+t0007882,13sse-op,68,9,3,3,48,Scattered Sites East
+t0007919,13sse-op,50,15,4,7,148,Scattered Sites East
+t0007950,13sse-op,50,2,0,0,0,Scattered Sites East
+t0008152,13sse-op,72,29,10,11.5,337.6,Scattered Sites East
+t0008163,13sse-op,63,33,4,6,95.25,Scattered Sites East
+t0008164,13sse-op,52,13,7,3,350.285714285714,Scattered Sites East
+t0008165,13sse-op,51,17,6,6.5,186,Scattered Sites East
+t0008186,13sse-op,40,33,4,13.5,204.25,Scattered Sites East
+t0008203,13sse-op,45,29,8,9,376.375,Scattered Sites East
+t0008214,13sse-op,22,3,0,0,0,Scattered Sites East
+t0008215,13sse-op,50,25,6,3,118.333333333333,Scattered Sites East
+t0008216,13sse-op,50,22,11,10,189.909090909091,Scattered Sites East
+t0008217,13sse-op,71,28,8,3,308,Scattered Sites East
+t0008219,13sse-op,52,24,2,8.5,56.5,Scattered Sites East
+t0008220,13sse-op,24,5,2,5,96,Scattered Sites East
+t0008248,13sse-op,27,4,0,0,0,Scattered Sites East
+t0008308,13sse-op,36,45,2,5,343.5,Scattered Sites East
+t0008336,13sse-op,103,32,0,0,0,Scattered Sites East
+t0008339,13sse-op,52,9,2,8,400.5,Scattered Sites East
+t0008343,13sse-op,19,2,0,0,0,Scattered Sites East
+t0008484,13sse-op,51,26,14,6,242.428571428571,Scattered Sites East
+t0008507,13sse-op,51,4,1,6,196,Scattered Sites East
+t0008530,13sse-op,58,1,0,0,0,Scattered Sites East
+t0008535,13sse-op,50,30,4,5.5,839.5,Scattered Sites East
+t0009040,13sse-op,39,11,2,12.5,75,Scattered Sites East
+t0011389,13sse-op,50,12,3,7,146.666666666667,Scattered Sites East
+t0011504,13sse-op,51,20,4,4,286.125,Scattered Sites East
+t0012543,13sse-op,13,3,0,0,0,Scattered Sites East
+t0016959,13sse-op,40,15,1,2,173,Scattered Sites East
+t0016973,13sse-op,33,25,6,12,270.5,Scattered Sites East
+t0024482,13sse-op,27,16,4,17.5,360,Scattered Sites East
+t0024513,13sse-op,15,21,3,14,281.666666666667,Scattered Sites East
+t0037500,13sse-op,27,12,9,14,212.333333333333,Scattered Sites East
+t0007085,12ssw-op,61,3,0,0,0,Scattered Sites West
+t0007088,12ssw-op,6,0,0,0,0,Scattered Sites West
+t0007110,12ssw-op,20,10,0,0,0,Scattered Sites West
+t0007142,12ssw-op,67,3,0,0,0,Scattered Sites West
+t0007143,12ssw-op,51,33,9,9,310.777777777778,Scattered Sites West
+t0007188,12ssw-op,50,28,15,6,666.6,Scattered Sites West
+t0007191,12ssw-op,35,9,4,11.5,61.25,Scattered Sites West
+t0007197,12ssw-op,46,9,3,9,35.6666666666667,Scattered Sites West
+t0007207,12ssw-op,50,28,5,9,106.4,Scattered Sites West
+t0007214,12ssw-op,78,24,6,11.5,317.666666666667,Scattered Sites West
+t0007234,12ssw-op,61,12,6,9,150.766666666667,Scattered Sites West
+t0007368,12ssw-op,48,24,7,17,320.857142857143,Scattered Sites West
+t0007369,12ssw-op,52,16,3,2,57,Scattered Sites West
+t0007372,12ssw-op,53,20,15,3,171.666666666667,Scattered Sites West
+t0007401,12ssw-op,58,2,0,0,0,Scattered Sites West
+t0007407,12ssw-op,39,4,3,4,237.666666666667,Scattered Sites West
+t0007464,12ssw-op,71,14,4,7.5,308,Scattered Sites West
+t0007466,12ssw-op,50,4,0,0,0,Scattered Sites West
+t0007468,12ssw-op,56,15,8,2,156.5,Scattered Sites West
+t0007477,12ssw-op,48,25,12,11.5,176.416666666667,Scattered Sites West
+t0007494,12ssw-op,39,12,3,9,61,Scattered Sites West
+t0007500,12ssw-op,4,0,0,0,0,Scattered Sites West
+t0007501,12ssw-op,55,21,4,9.5,80,Scattered Sites West
+t0007518,12ssw-op,65,32,15,9,409.866666666667,Scattered Sites West
+t0007586,12ssw-op,49,4,1,9,451,Scattered Sites West
+t0007648,12ssw-op,8,9,3,4,78.6666666666667,Scattered Sites West
+t0007651,12ssw-op,24,31,6,14.5,166.833333333333,Scattered Sites West
+t0007685,12ssw-op,50,21,9,11,102.888888888889,Scattered Sites West
+t0007690,12ssw-op,67,5,1,9,701,Scattered Sites West
+t0007693,12ssw-op,51,11,6,7,338.166666666667,Scattered Sites West
+t0007702,12ssw-op,50,37,10,11,232.1,Scattered Sites West
+t0007715,12ssw-op,54,16,1,1,82,Scattered Sites West
+t0007722,12ssw-op,6,0,0,0,0,Scattered Sites West
+t0007772,12ssw-op,50,34,11,6,818.909090909091,Scattered Sites West
+t0007778,12ssw-op,50,2,1,9,102,Scattered Sites West
+t0007811,12ssw-op,39,27,11,7,544.818181818182,Scattered Sites West
+t0007829,12ssw-op,31,25,4,16.5,267.25,Scattered Sites West
+t0007853,12ssw-op,51,0,0,0,0,Scattered Sites West
+t0007854,12ssw-op,56,6,1,4,350,Scattered Sites West
+t0007856,12ssw-op,47,29,11,12,914.863636363636,Scattered Sites West
+t0007864,12ssw-op,56,5,5,2,521.6,Scattered Sites West
+t0007876,12ssw-op,32,20,1,3,500,Scattered Sites West
+t0007887,12ssw-op,87,28,12,10.5,439.25,Scattered Sites West
+t0007909,12ssw-op,56,0,0,0,0,Scattered Sites West
+t0007914,12ssw-op,50,8,5,4,393,Scattered Sites West
+t0007922,12ssw-op,62,12,2,5.5,46,Scattered Sites West
+t0007925,12ssw-op,71,32,1,1,281,Scattered Sites West
+t0007980,12ssw-op,55,6,1,9,143,Scattered Sites West
+t0008028,12ssw-op,31,23,13,2,315.846153846154,Scattered Sites West
+t0008178,12ssw-op,50,3,1,18,213,Scattered Sites West
+t0008222,12ssw-op,50,31,17,9,395.529411764706,Scattered Sites West
+t0008237,12ssw-op,64,0,0,0,0,Scattered Sites West
+t0008337,12ssw-op,62,26,11,7,317,Scattered Sites West
+t0008383,12ssw-op,50,2,0,0,0,Scattered Sites West
+t0008474,12ssw-op,32,9,1,4,106,Scattered Sites West
+t0012033,12ssw-op,56,11,2,11.5,112.5,Scattered Sites West
+t0012538,12ssw-op,62,24,0,0,0,Scattered Sites West
+t0016883,12ssw-op,12,27,3,11,198.516666666667,Scattered Sites West
+t0023448,12ssw-op,32,10,2,10,74.5,Scattered Sites West
+t0023597,12ssw-op,4,0,0,0,0,Scattered Sites West
+t0024450,12ssw-op,15,11,8,4,491.625,Scattered Sites West
+t0024779,12ssw-op,26,7,5,8,377,Scattered Sites West
+b0014540,15she-op,55,20,4,8.5,402.0875,Sheridan
+t0000268,15she-op,50,15,2,5,341,Sheridan
+t0002055,15she-op,63,16,5,5,104,Sheridan
+t0002435,15she-op,50,3,1,1,232,Sheridan
+t0007128,15she-op,75,18,0,0,0,Sheridan
+t0007135,15she-op,50,1,1,3,300,Sheridan
+t0007138,15she-op,51,21,1,9,278,Sheridan
+t0007144,15she-op,50,15,1,2,225,Sheridan
+t0007150,15she-op,50,4,0,0,0,Sheridan
+t0007151,15she-op,50,19,11,3,203.363636363636,Sheridan
+t0007153,15she-op,53,26,6,1,236.333333333333,Sheridan
+t0007154,15she-op,35,30,2,11.5,226,Sheridan
+t0007155,15she-op,60,11,0,0,0,Sheridan
+t0007156,15she-op,50,15,0,0,0,Sheridan
+t0007167,15she-op,13,0,0,0,0,Sheridan
+t0007170,15she-op,50,26,13,14,307.076923076923,Sheridan
+t0007175,15she-op,50,1,1,12,222,Sheridan
+t0007178,15she-op,50,0,0,0,0,Sheridan
+t0007198,15she-op,50,12,0,0,0,Sheridan
+t0007204,15she-op,21,0,0,0,0,Sheridan
+t0007213,15she-op,68,37,5,6,315.8,Sheridan
+t0007226,15she-op,50,8,1,1,226,Sheridan
+t0007248,15she-op,52,8,1,1,438,Sheridan
+t0007392,15she-op,75,50,21,5,433.904761904762,Sheridan
+t0007398,15she-op,50,20,2,19.5,319,Sheridan
+t0007399,15she-op,50,9,3,4,244.333333333333,Sheridan
+t0007414,15she-op,50,6,0,0,0,Sheridan
+t0007424,15she-op,54,4,0,0,0,Sheridan
+t0007429,15she-op,58,14,3,6,219,Sheridan
+t0007455,15she-op,50,3,1,9,30,Sheridan
+t0007478,15she-op,57,12,1,11,303,Sheridan
+t0007527,15she-op,57,6,0,0,0,Sheridan
+t0007528,15she-op,50,0,0,0,0,Sheridan
+t0007529,15she-op,50,7,2,1,218,Sheridan
+t0007536,15she-op,50,4,0,0,0,Sheridan
+t0007548,15she-op,50,6,0,0,0,Sheridan
+t0007553,15she-op,50,8,1,1,225,Sheridan
+t0007590,15she-op,50,0,0,0,0,Sheridan
+t0007617,15she-op,57,6,0,0,0,Sheridan
+t0007618,15she-op,50,12,6,5.5,197.166666666667,Sheridan
+t0007624,15she-op,72,45,19,12,267.894736842105,Sheridan
+t0007625,15she-op,54,46,4,11.5,227.25,Sheridan
+t0007635,15she-op,55,20,4,4,251.5,Sheridan
+t0007701,15she-op,50,21,15,15,300.933333333333,Sheridan
+t0007710,15she-op,50,22,9,6,295.666666666667,Sheridan
+t0007712,15she-op,58,24,2,5.5,239,Sheridan
+t0007731,15she-op,50,25,10,4.5,231.5,Sheridan
+t0007736,15she-op,50,6,0,0,0,Sheridan
+t0007743,15she-op,63,28,2,2,297.5,Sheridan
+t0007774,15she-op,50,1,1,14,277,Sheridan
+t0007776,15she-op,50,6,0,0,0,Sheridan
+t0007790,15she-op,50,16,0,0,0,Sheridan
+t0007793,15she-op,56,1,0,0,0,Sheridan
+t0007794,15she-op,60,34,2,2,211,Sheridan
+t0007798,15she-op,50,1,0,0,0,Sheridan
+t0007799,15she-op,50,15,4,17.5,352.5,Sheridan
+t0007814,15she-op,61,27,0,0,0,Sheridan
+t0007820,15she-op,50,0,0,0,0,Sheridan
+t0007824,15she-op,60,0,0,0,0,Sheridan
+t0007842,15she-op,50,7,1,1,230,Sheridan
+t0007844,15she-op,51,2,1,9,2,Sheridan
+t0007845,15she-op,50,0,0,0,0,Sheridan
+t0007883,15she-op,59,10,1,1,199,Sheridan
+t0007891,15she-op,50,15,3,4,150,Sheridan
+t0007894,15she-op,50,28,1,9,110,Sheridan
+t0007895,15she-op,50,12,2,4.5,17,Sheridan
+t0007898,15she-op,56,0,0,0,0,Sheridan
+t0007928,15she-op,77,38,6,8,419.5,Sheridan
+t0007933,15she-op,63,26,4,11,269.75,Sheridan
+t0007939,15she-op,57,1,0,0,0,Sheridan
+t0007941,15she-op,53,40,2,1.5,260.5,Sheridan
+t0007946,15she-op,58,39,6,5,335.666666666667,Sheridan
+t0007978,15she-op,50,21,3,17,431,Sheridan
+t0007986,15she-op,50,28,2,4,223.5,Sheridan
+t0007987,15she-op,50,9,0,0,0,Sheridan
+t0007990,15she-op,50,4,0,0,0,Sheridan
+t0007991,15she-op,50,0,0,0,0,Sheridan
+t0007998,15she-op,50,10,3,17,236,Sheridan
+t0008015,15she-op,50,2,1,6,236,Sheridan
+t0008029,15she-op,65,5,0,0,0,Sheridan
+t0008056,15she-op,53,2,2,4.5,213.5,Sheridan
+t0008070,15she-op,50,10,2,8.5,110.5,Sheridan
+t0008077,15she-op,51,0,0,0,0,Sheridan
+t0008078,15she-op,50,11,1,1,225,Sheridan
+t0008117,15she-op,51,2,1,17,219,Sheridan
+t0008119,15she-op,51,32,1,1,500,Sheridan
+t0008123,15she-op,60,34,5,10,493.8,Sheridan
+t0008137,15she-op,50,8,1,19,6,Sheridan
+t0008139,15she-op,76,41,1,18,300,Sheridan
+t0008142,15she-op,59,24,7,9,267.142857142857,Sheridan
+t0008143,15she-op,50,8,1,1,232,Sheridan
+t0008145,15she-op,50,42,9,4,138,Sheridan
+t0008155,15she-op,50,0,0,0,0,Sheridan
+t0008157,15she-op,50,7,1,19,34,Sheridan
+t0008158,15she-op,55,2,0,0,0,Sheridan
+t0008159,15she-op,58,32,11,2,363.090909090909,Sheridan
+t0008179,15she-op,12,0,0,0,0,Sheridan
+t0008185,15she-op,50,19,2,9,324,Sheridan
+t0008194,15she-op,57,15,2,17,256.5,Sheridan
+t0008200,15she-op,68,1,1,1,250,Sheridan
+t0008202,15she-op,52,22,2,10.5,231,Sheridan
+t0008218,15she-op,57,40,7,6,256.785714285714,Sheridan
+t0008229,15she-op,50,0,0,0,0,Sheridan
+t0008233,15she-op,22,15,0,0,0,Sheridan
+t0008261,15she-op,50,0,0,0,0,Sheridan
+t0008277,15she-op,52,2,0,0,0,Sheridan
+t0008296,15she-op,51,44,3,6,254.666666666667,Sheridan
+t0008300,15she-op,50,16,2,7.5,169.5,Sheridan
+t0008309,15she-op,54,18,1,2,232,Sheridan
+t0008312,15she-op,50,24,2,8.5,34,Sheridan
+t0008319,15she-op,41,12,2,10.5,233.5,Sheridan
+t0008322,15she-op,59,34,13,3,251.153846153846,Sheridan
+t0008324,15she-op,50,16,4,2.5,236.5,Sheridan
+t0008325,15she-op,50,11,1,8,242,Sheridan
+t0010060,15she-op,50,0,0,0,0,Sheridan
+t0010280,15she-op,24,11,1,6,232,Sheridan
+t0010842,15she-op,50,22,4,12.5,198.7975,Sheridan
+t0010854,15she-op,50,2,0,0,0,Sheridan
+t0010861,15she-op,50,14,4,4.5,216,Sheridan
+t0011120,15she-op,50,3,0,0,0,Sheridan
+t0011122,15she-op,54,38,16,8,200.75,Sheridan
+t0011134,15she-op,50,1,1,2,223,Sheridan
+t0011136,15she-op,37,22,2,6.5,233,Sheridan
+t0011179,15she-op,54,10,3,2,182.666666666667,Sheridan
+t0011180,15she-op,50,4,1,5,224,Sheridan
+t0011223,15she-op,50,16,2,4.5,109,Sheridan
+t0011244,15she-op,50,28,6,2.5,248,Sheridan
+t0011322,15she-op,50,10,1,1,226,Sheridan
+t0011328,15she-op,50,2,1,4,220,Sheridan
+t0011332,15she-op,60,12,2,10,189.5,Sheridan
+t0011333,15she-op,63,36,6,5,1054.5,Sheridan
+t0011350,15she-op,59,0,0,0,0,Sheridan
+t0011352,15she-op,50,28,4,8,123.75,Sheridan
+t0011354,15she-op,61,24,0,0,0,Sheridan
+t0011601,15she-op,51,9,2,11,228.5,Sheridan
+t0011602,15she-op,50,48,5,8,219.2,Sheridan
+t0011631,15she-op,50,6,0,0,0,Sheridan
+t0011671,15she-op,51,11,1,14,50,Sheridan
+t0011673,15she-op,50,14,2,9.5,199.5,Sheridan
+t0011678,15she-op,54,17,2,2,51.5,Sheridan
+t0011722,15she-op,59,21,0,0,0,Sheridan
+t0011723,15she-op,38,13,10,16,233.5,Sheridan
+t0011789,15she-op,50,27,8,16,291.125,Sheridan
+t0011804,15she-op,49,22,0,0,0,Sheridan
+t0011816,15she-op,50,0,0,0,0,Sheridan
+t0011858,15she-op,50,10,2,19,242,Sheridan
+t0011967,15she-op,21,0,0,0,0,Sheridan
+t0012063,15she-op,50,25,6,8.5,305,Sheridan
+t0012082,15she-op,50,14,3,1,159,Sheridan
+t0012092,15she-op,55,23,5,7,182,Sheridan
+t0012241,15she-op,50,1,1,1,230,Sheridan
+t0012285,15she-op,50,9,2,18,217,Sheridan
+t0012303,15she-op,57,6,0,0,0,Sheridan
+t0012320,15she-op,50,0,0,0,0,Sheridan
+t0012400,15she-op,50,15,1,1,219,Sheridan
+t0012462,15she-op,57,15,3,5,228.333333333333,Sheridan
+t0012463,15she-op,51,10,3,5,192,Sheridan
+t0012476,15she-op,58,32,8,15.5,264.125,Sheridan
+t0012480,15she-op,50,6,0,0,0,Sheridan
+t0012487,15she-op,50,12,1,1,226,Sheridan
+t0012508,15she-op,51,9,4,7.5,149,Sheridan
+t0012509,15she-op,56,12,1,3,215,Sheridan
+t0012524,15she-op,57,40,13,13,225.384615384615,Sheridan
+t0012528,15she-op,50,8,2,2.5,244.5,Sheridan
+t0012529,15she-op,50,8,1,20,226,Sheridan
+t0012559,15she-op,50,7,0,0,0,Sheridan
+t0012579,15she-op,53,30,1,14,600,Sheridan
+t0012620,15she-op,50,5,0,0,0,Sheridan
+t0012716,15she-op,52,14,4,1,56.25,Sheridan
+t0012812,15she-op,50,8,0,0,0,Sheridan
+t0012813,15she-op,57,20,10,2.5,98.3,Sheridan
+t0012817,15she-op,50,37,11,10,223.272727272727,Sheridan
+t0012818,15she-op,72,35,2,2,222,Sheridan
+t0012993,15she-op,50,52,4,17,218.75,Sheridan
+t0012994,15she-op,51,28,1,1,215,Sheridan
+t0012995,15she-op,62,34,8,8,675.77,Sheridan
+t0012996,15she-op,53,57,2,8,167.5,Sheridan
+t0013033,15she-op,50,14,2,15.5,428.5,Sheridan
+t0013034,15she-op,61,31,15,9,271,Sheridan
+t0013062,15she-op,61,28,4,7.5,293.75,Sheridan
+t0013096,15she-op,50,0,0,0,0,Sheridan
+t0013221,15she-op,50,0,0,0,0,Sheridan
+t0013222,15she-op,50,18,3,1,302,Sheridan
+t0013225,15she-op,50,5,2,17,220,Sheridan
+t0013231,15she-op,50,32,2,11,215,Sheridan
+t0013232,15she-op,26,0,0,0,0,Sheridan
+t0013233,15she-op,50,30,9,9,147.111111111111,Sheridan
+t0013234,15she-op,50,2,0,0,0,Sheridan
+t0013255,15she-op,64,19,2,3.5,217.5,Sheridan
+t0013264,15she-op,51,31,9,17,265.333333333333,Sheridan
+t0013283,15she-op,52,10,1,1,293,Sheridan
+t0013302,15she-op,62,41,5,7,228,Sheridan
+t0013331,15she-op,57,4,0,0,0,Sheridan
+t0013332,15she-op,51,5,0,0,0,Sheridan
+t0013337,15she-op,52,0,0,0,0,Sheridan
+t0013342,15she-op,50,25,0,0,0,Sheridan
+t0013343,15she-op,50,11,0,0,0,Sheridan
+t0013428,15she-op,53,45,3,1,297.333333333333,Sheridan
+t0013592,15she-op,53,6,0,0,0,Sheridan
+t0013614,15she-op,56,3,0,0,0,Sheridan
+t0013719,15she-op,50,22,2,-2.5,230.5,Sheridan
+t0013845,15she-op,50,2,0,0,0,Sheridan
+t0013846,15she-op,50,0,0,0,0,Sheridan
+t0013942,15she-op,63,16,0,0,0,Sheridan
+t0014033,15she-op,69,24,3,8,264.333333333333,Sheridan
+t0014162,15she-op,50,0,0,0,0,Sheridan
+t0014196,15she-op,50,5,2,10.5,234,Sheridan
+t0014197,15she-op,55,25,8,12,198.125,Sheridan
+t0014201,15she-op,17,0,0,0,0,Sheridan
+t0014203,15she-op,51,33,26,16,447.807692307692,Sheridan
+t0014216,15she-op,55,38,7,17,259.714285714286,Sheridan
+t0014219,15she-op,52,12,3,18,297.666666666667,Sheridan
+t0014253,15she-op,50,1,0,0,0,Sheridan
+t0014254,15she-op,59,47,13,3,50,Sheridan
+t0014414,15she-op,57,29,5,11,182,Sheridan
+t0014514,15she-op,50,7,1,2,220,Sheridan
+t0014519,15she-op,65,28,24,9.5,299.541666666667,Sheridan
+t0014586,15she-op,57,0,0,0,0,Sheridan
+t0014626,15she-op,50,6,0,0,0,Sheridan
+t0014645,15she-op,62,8,2,1,226,Sheridan
+t0014683,15she-op,71,62,27,8,279.962962962963,Sheridan
+t0014685,15she-op,50,16,2,4,128.5,Sheridan
+t0014695,15she-op,37,12,1,19,402,Sheridan
+t0014707,15she-op,52,5,1,2,254,Sheridan
+t0014708,15she-op,50,24,4,18.5,358.5,Sheridan
+t0014789,15she-op,50,0,0,0,0,Sheridan
+t0014793,15she-op,50,1,0,0,0,Sheridan
+t0014795,15she-op,50,15,3,1,398,Sheridan
+t0014840,15she-op,50,0,0,0,0,Sheridan
+t0014849,15she-op,62,0,0,0,0,Sheridan
+t0014897,15she-op,50,16,3,13,189,Sheridan
+t0014994,15she-op,50,12,0,0,0,Sheridan
+t0015216,15she-op,33,30,4,7,344.75,Sheridan
+t0015286,15she-op,50,2,1,8,329,Sheridan
+t0015308,15she-op,60,31,3,2,305,Sheridan
+t0015451,15she-op,50,32,7,9,176.714285714286,Sheridan
+t0015470,15she-op,50,5,2,12.5,190.5,Sheridan
+t0015710,15she-op,50,0,0,0,0,Sheridan
+t0015711,15she-op,50,5,0,0,0,Sheridan
+t0015730,15she-op,57,14,1,20,336,Sheridan
+t0015731,15she-op,50,9,1,20,226,Sheridan
+t0015760,15she-op,50,6,5,4,62,Sheridan
+t0015762,15she-op,60,44,27,7,265.222222222222,Sheridan
+t0015774,15she-op,52,28,6,4,187.833333333333,Sheridan
+t0015775,15she-op,53,23,0,0,0,Sheridan
+t0015783,15she-op,53,6,1,2,50,Sheridan
+t0015825,15she-op,54,26,0,0,0,Sheridan
+t0015831,15she-op,51,19,3,15,208,Sheridan
+t0015845,15she-op,56,0,0,0,0,Sheridan
+t0015885,15she-op,50,18,1,1,220,Sheridan
+t0015920,15she-op,53,18,6,15.5,223.833333333333,Sheridan
+t0016006,15she-op,52,19,1,20,216,Sheridan
+t0016017,15she-op,47,23,2,10.5,219.5,Sheridan
+t0016098,15she-op,46,13,0,0,0,Sheridan
+t0016099,15she-op,46,26,7,7,271.535714285714,Sheridan
+t0016112,15she-op,46,11,5,9,213.4,Sheridan
+t0016186,15she-op,45,4,0,0,0,Sheridan
+t0016196,15she-op,52,17,1,20,240,Sheridan
+t0016275,15she-op,49,26,9,8,224.555555555556,Sheridan
+t0016276,15she-op,46,15,3,4,283,Sheridan
+t0016393,15she-op,59,22,2,2.5,313,Sheridan
+t0016459,15she-op,44,16,1,4,100,Sheridan
+t0016594,15she-op,42,1,0,0,0,Sheridan
+t0016598,15she-op,43,3,2,-1,220,Sheridan
+t0016613,15she-op,51,26,2,8,205.5,Sheridan
+t0016624,15she-op,41,1,0,0,0,Sheridan
+t0016636,15she-op,43,3,1,2,131,Sheridan
+t0016645,15she-op,41,16,2,3.5,197,Sheridan
+t0017117,15she-op,29,3,1,8,253,Sheridan
+t0017738,15she-op,20,14,0,0,0,Sheridan
+t0019999,15she-op,29,10,0,0,0,Sheridan
+t0023661,15she-op,17,1,0,0,0,Sheridan
+t0023665,15she-op,27,11,4,17,219.25,Sheridan
+t0023721,15she-op,23,14,2,2.5,259.5,Sheridan
+t0023728,15she-op,21,16,1,1,338,Sheridan
+t0023732,15she-op,24,8,0,0,0,Sheridan
+t0023747,15she-op,22,1,0,0,0,Sheridan
+t0023758,15she-op,17,2,1,3,220,Sheridan
+t0023764,15she-op,31,10,1,2,543,Sheridan
+t0023790,15she-op,12,0,0,0,0,Sheridan
+t0023834,15she-op,27,8,1,2,215,Sheridan
+t0023843,15she-op,20,8,3,17,132.666666666667,Sheridan
+t0023894,15she-op,21,5,1,9,251,Sheridan
+t0023896,15she-op,32,19,10,3.5,295.7,Sheridan
+t0023961,15she-op,27,11,0,0,0,Sheridan
+t0023968,15she-op,31,9,4,6.5,217.5,Sheridan
+t0023989,15she-op,21,2,0,0,0,Sheridan
+t0024031,15she-op,31,0,0,0,0,Sheridan
+t0024034,15she-op,41,0,0,0,0,Sheridan
+t0024108,15she-op,29,22,1,1,210,Sheridan
+t0024109,15she-op,12,0,0,0,0,Sheridan
+t0024117,15she-op,37,8,1,11,413,Sheridan
+t0024157,15she-op,25,12,1,1,207,Sheridan
+t0024165,15she-op,22,2,0,0,0,Sheridan
+t0024177,15she-op,38,2,0,0,0,Sheridan
+t0024180,15she-op,29,6,2,2,202.5,Sheridan
+t0024220,15she-op,29,10,1,5,169,Sheridan
+t0024248,15she-op,19,0,0,0,0,Sheridan
+t0024271,15she-op,30,0,0,0,0,Sheridan
+t0024285,15she-op,28,26,1,1,216,Sheridan
+t0024322,15she-op,29,15,1,19,219,Sheridan
+t0025447,15she-op,22,10,2,5.5,525,Sheridan
+t0026758,15she-op,25,18,2,11,226.5,Sheridan
+t0030095,15she-op,25,0,0,0,0,Sheridan
+t0034364,15she-op,17,2,0,0,0,Sheridan
+t0034366,15she-op,26,2,1,1,237,Sheridan
+t0034404,15she-op,20,8,1,2,284,Sheridan
+t0036987,15she-op,17,8,2,3,255,Sheridan
+t0037161,15she-op,17,1,0,0,0,Sheridan
+t0037221,15she-op,2,0,0,0,0,Sheridan
+t0037485,15she-op,2,0,0,0,0,Sheridan
+t0037560,15she-op,18,0,0,0,0,Sheridan
+t0037648,15she-op,17,0,0,0,0,Sheridan
+t0037791,15she-op,17,2,0,0,0,Sheridan
+t0037798,15she-op,18,0,0,0,0,Sheridan
+t0037815,15she-op,18,2,0,0,0,Sheridan
+t0037816,15she-op,18,6,1,2,232,Sheridan
+t0038027,15she-op,12,0,0,0,0,Sheridan
+t0038030,15she-op,2,0,0,0,0,Sheridan
+b0007505,16smi-op,11,0,0,0,0,Smith Homes
+b0011116,16smi-op,35,6,2,6.5,327,Smith Homes
+t0007105,16smi-op,50,0,0,0,0,Smith Homes
+t0007120,16smi-op,57,3,1,9,122,Smith Homes
+t0007121,16smi-op,25,23,8,10,141.875,Smith Homes
+t0007129,16smi-op,50,31,14,4.5,140.071428571429,Smith Homes
+t0007131,16smi-op,20,0,0,0,0,Smith Homes
+t0007132,16smi-op,10,0,0,0,0,Smith Homes
+t0007152,16smi-op,50,11,0,0,0,Smith Homes
+t0007164,16smi-op,1,0,0,0,0,Smith Homes
+t0007182,16smi-op,3,0,0,0,0,Smith Homes
+t0007222,16smi-op,58,24,6,14,445.666666666667,Smith Homes
+t0007224,16smi-op,52,15,2,3,127.5,Smith Homes
+t0007237,16smi-op,50,0,0,0,0,Smith Homes
+t0007383,16smi-op,30,18,6,9,207.666666666667,Smith Homes
+t0007422,16smi-op,50,17,1,9,434,Smith Homes
+t0007443,16smi-op,50,0,0,0,0,Smith Homes
+t0007444,16smi-op,50,0,0,0,0,Smith Homes
+t0007445,16smi-op,50,5,1,9,484,Smith Homes
+t0007459,16smi-op,50,6,1,12,344,Smith Homes
+t0007471,16smi-op,38,8,3,4,67.6666666666667,Smith Homes
+t0007474,16smi-op,61,13,1,2,722,Smith Homes
+t0007475,16smi-op,26,4,0,0,0,Smith Homes
+t0007497,16smi-op,24,10,2,9.5,210,Smith Homes
+t0007506,16smi-op,54,3,3,9,541.666666666667,Smith Homes
+t0007509,16smi-op,50,17,2,12,110,Smith Homes
+t0007510,16smi-op,56,23,2,6.5,70.5,Smith Homes
+t0007574,16smi-op,61,31,1,19,488,Smith Homes
+t0007576,16smi-op,50,5,1,20,114,Smith Homes
+t0007577,16smi-op,50,27,3,11,74.6666666666667,Smith Homes
+t0007591,16smi-op,11,9,3,5,31,Smith Homes
+t0007592,16smi-op,16,4,2,7,102.5,Smith Homes
+t0007599,16smi-op,50,32,11,10,486.363636363636,Smith Homes
+t0007649,16smi-op,51,22,0,0,0,Smith Homes
+t0007720,16smi-op,3,0,0,0,0,Smith Homes
+t0007723,16smi-op,51,4,0,0,0,Smith Homes
+t0007758,16smi-op,48,19,13,10,484.923076923077,Smith Homes
+t0007791,16smi-op,38,22,8,10,81.625,Smith Homes
+t0007802,16smi-op,7,0,0,0,0,Smith Homes
+t0007816,16smi-op,24,57,5,2,185.4,Smith Homes
+t0007866,16smi-op,32,6,0,0,0,Smith Homes
+t0007873,16smi-op,57,0,0,0,0,Smith Homes
+t0007888,16smi-op,46,3,1,9,163,Smith Homes
+t0008045,16smi-op,50,31,8,5.5,229.625,Smith Homes
+t0008097,16smi-op,50,20,7,9,290.714285714286,Smith Homes
+t0008198,16smi-op,55,0,0,0,0,Smith Homes
+t0008244,16smi-op,35,47,11,5,315.181818181818,Smith Homes
+t0008287,16smi-op,53,2,0,0,0,Smith Homes
+t0008342,16smi-op,73,29,11,12,214.272727272727,Smith Homes
+t0008380,16smi-op,62,30,15,5,426.6,Smith Homes
+t0008382,16smi-op,33,2,0,0,0,Smith Homes
+t0008388,16smi-op,51,32,9,9,125.888888888889,Smith Homes
+t0008390,16smi-op,50,10,1,16,26,Smith Homes
+t0008397,16smi-op,2,0,0,0,0,Smith Homes
+t0008398,16smi-op,54,2,1,8,388,Smith Homes
+t0009297,16smi-op,25,2,0,0,0,Smith Homes
+t0009914,16smi-op,57,12,2,12.5,184,Smith Homes
+t0010800,16smi-op,70,36,22,6,442.727272727273,Smith Homes
+t0010894,16smi-op,55,10,0,0,0,Smith Homes
+t0011253,16smi-op,9,5,1,10,12,Smith Homes
+t0011291,16smi-op,37,26,4,7.5,195,Smith Homes
+t0011315,16smi-op,60,32,16,8,383.0625,Smith Homes
+t0011353,16smi-op,40,2,0,0,0,Smith Homes
+t0011566,16smi-op,59,11,1,2,400,Smith Homes
+t0011698,16smi-op,22,11,1,17,200,Smith Homes
+t0011785,16smi-op,6,0,0,0,0,Smith Homes
+t0012375,16smi-op,11,0,0,0,0,Smith Homes
+t0012452,16smi-op,9,0,0,0,0,Smith Homes
+t0012532,16smi-op,14,17,1,3,100,Smith Homes
+t0012535,16smi-op,23,3,0,0,0,Smith Homes
+t0012651,16smi-op,1,0,0,0,0,Smith Homes
+t0012726,16smi-op,12,2,2,9,13,Smith Homes
+t0013028,16smi-op,21,11,3,5,276.166666666667,Smith Homes
+t0013050,16smi-op,10,1,1,10,110,Smith Homes
+t0013059,16smi-op,42,33,17,10,175.529411764706,Smith Homes
+t0013064,16smi-op,1,0,0,0,0,Smith Homes
+t0013087,16smi-op,68,39,9,6,50.5555555555556,Smith Homes
+t0013170,16smi-op,1,0,0,0,0,Smith Homes
+t0013219,16smi-op,36,27,4,6,93,Smith Homes
+t0013266,16smi-op,77,29,11,2,161.818181818182,Smith Homes
+t0013278,16smi-op,16,3,1,6,103.33,Smith Homes
+t0013436,16smi-op,50,20,4,8,326.25,Smith Homes
+t0013669,16smi-op,58,5,1,4,150,Smith Homes
+t0014048,16smi-op,24,1,0,0,0,Smith Homes
+t0014063,16smi-op,41,31,11,7,175.454545454545,Smith Homes
+t0014176,16smi-op,33,2,0,0,0,Smith Homes
+t0014419,16smi-op,61,35,10,4.5,471.2,Smith Homes
+t0014905,16smi-op,54,22,8,7.5,150.9875,Smith Homes
+t0015020,16smi-op,56,28,9,7,599.666666666667,Smith Homes
+t0015569,16smi-op,52,35,7,12,184.571428571429,Smith Homes
+t0015593,16smi-op,50,41,0,0,0,Smith Homes
+t0015595,16smi-op,43,21,3,2,219.333333333333,Smith Homes
+t0015781,16smi-op,11,12,4,16,76.25,Smith Homes
+t0015789,16smi-op,50,5,1,8,355,Smith Homes
+t0015853,16smi-op,51,6,4,9.5,536.5,Smith Homes
+t0016007,16smi-op,58,29,5,14,403,Smith Homes
+t0016013,16smi-op,6,0,0,0,0,Smith Homes
+t0016031,16smi-op,47,28,5,2,156.8,Smith Homes
+t0016337,16smi-op,46,32,6,5.5,217.333333333333,Smith Homes
+t0016418,16smi-op,42,33,2,3.5,412,Smith Homes
+t0016804,16smi-op,29,20,6,8,152.5,Smith Homes
+t0016806,16smi-op,39,7,2,4,777.5,Smith Homes
+t0016897,16smi-op,21,0,0,0,0,Smith Homes
+t0016898,16smi-op,40,16,1,18,127,Smith Homes
+t0021892,16smi-op,31,13,4,3,89.25,Smith Homes
+t0022468,16smi-op,40,20,3,3,105,Smith Homes
+t0022574,16smi-op,30,9,0,0,0,Smith Homes
+t0022641,16smi-op,50,20,1,18,148,Smith Homes
+t0022722,16smi-op,43,3,0,0,0,Smith Homes
+t0022799,16smi-op,10,0,0,0,0,Smith Homes
+t0023026,16smi-op,23,1,1,5,100,Smith Homes
+t0023218,16smi-op,43,7,0,0,0,Smith Homes
+t0023281,16smi-op,23,3,1,3,80,Smith Homes
+t0023511,16smi-op,18,0,0,0,0,Smith Homes
+t0023518,16smi-op,38,12,2,5,117.25,Smith Homes
+t0023536,16smi-op,17,14,1,9,1000,Smith Homes
+t0023564,16smi-op,16,1,0,0,0,Smith Homes
+t0023580,16smi-op,25,6,3,9,243.333333333333,Smith Homes
+t0023598,16smi-op,14,1,1,9,83,Smith Homes
+t0029875,16smi-op,27,15,3,5,20,Smith Homes
+t0034400,16smi-op,24,4,2,7.5,166.5,Smith Homes
+t0034535,16smi-op,63,21,2,1.5,238,Smith Homes
+t0034540,16smi-op,15,4,0,0,0,Smith Homes
+t0037767,16smi-op,3,0,0,0,0,Smith Homes
+t0037896,16smi-op,5,0,0,0,0,Smith Homes
+b0036886,18war-op,28,0,0,0,0,Warren West
+t0007084,18war-op,65,23,11,16,203.509090909091,Warren West
+t0007146,18war-op,50,1,0,0,0,Warren West
+t0007218,18war-op,50,0,0,0,0,Warren West
+t0007246,18war-op,77,38,4,7.5,175,Warren West
+t0007360,18war-op,51,21,6,7,162.333333333333,Warren West
+t0007447,18war-op,25,18,0,0,0,Warren West
+t0007654,18war-op,50,10,0,0,0,Warren West
+t0007659,18war-op,69,37,3,17,260,Warren West
+t0007675,18war-op,50,5,2,3.5,185.5,Warren West
+t0007676,18war-op,50,2,0,0,0,Warren West
+t0007830,18war-op,50,0,0,0,0,Warren West
+t0007838,18war-op,50,2,0,0,0,Warren West
+t0007839,18war-op,72,19,7,7,253,Warren West
+t0007848,18war-op,101,32,2,7.5,132.5,Warren West
+t0007855,18war-op,50,4,0,0,0,Warren West
+t0007869,18war-op,50,10,1,2,320,Warren West
+t0007879,18war-op,50,2,1,2,276,Warren West
+t0007903,18war-op,62,30,3,2,158,Warren West
+t0007905,18war-op,51,5,0,0,0,Warren West
+t0007906,18war-op,52,0,0,0,0,Warren West
+t0007907,18war-op,50,2,0,0,0,Warren West
+t0007913,18war-op,50,24,11,2,418.272727272727,Warren West
+t0007917,18war-op,50,36,2,5.5,131,Warren West
+t0007957,18war-op,51,0,0,0,0,Warren West
+t0007981,18war-op,55,11,8,2,173.75,Warren West
+t0008114,18war-op,50,0,0,0,0,Warren West
+t0008116,18war-op,50,1,0,0,0,Warren West
+t0008156,18war-op,50,0,0,0,0,Warren West
+t0008209,18war-op,25,2,2,10.5,287,Warren West
+t0008211,18war-op,50,1,1,15,124,Warren West
+t0008235,18war-op,50,26,6,3.5,137.333333333333,Warren West
+t0008258,18war-op,53,0,0,0,0,Warren West
+t0008276,18war-op,50,7,2,5,462,Warren West
+t0008303,18war-op,50,1,0,0,0,Warren West
+t0008349,18war-op,11,0,0,0,0,Warren West
+t0008364,18war-op,50,2,1,19,203,Warren West
+t0008510,18war-op,50,0,0,0,0,Warren West
+t0010844,18war-op,50,7,4,6,186.5,Warren West
+t0010942,18war-op,62,0,0,0,0,Warren West
+t0011034,18war-op,50,31,22,10.5,138.363636363636,Warren West
+t0011130,18war-op,62,37,9,6,230.111111111111,Warren West
+t0011239,18war-op,50,5,2,3.5,231,Warren West
+t0011276,18war-op,52,0,0,0,0,Warren West
+t0011277,18war-op,81,36,12,4,209.416666666667,Warren West
+t0011283,18war-op,34,11,4,9.5,252.5,Warren West
+t0011356,18war-op,53,11,1,2,10,Warren West
+t0011780,18war-op,50,4,1,16,4,Warren West
+t0012042,18war-op,50,2,0,0,0,Warren West
+t0012045,18war-op,61,8,0,0,0,Warren West
+t0012118,18war-op,50,5,1,2,34,Warren West
+t0012119,18war-op,50,7,0,0,0,Warren West
+t0012131,18war-op,50,15,4,2,50,Warren West
+t0012143,18war-op,22,5,3,9,58.3333333333333,Warren West
+t0012328,18war-op,50,7,0,0,0,Warren West
+t0012373,18war-op,24,12,3,2,50,Warren West
+t0012374,18war-op,51,34,16,2,331.3125,Warren West
+t0012455,18war-op,51,29,1,3,280,Warren West
+t0012461,18war-op,70,22,8,8.5,297.25,Warren West
+t0012497,18war-op,54,33,3,4,220,Warren West
+t0013199,18war-op,50,7,2,8.5,122,Warren West
+t0013216,18war-op,50,37,11,2,198.272727272727,Warren West
+t0013252,18war-op,68,0,0,0,0,Warren West
+t0013434,18war-op,50,0,0,0,0,Warren West
+t0014336,18war-op,51,0,0,0,0,Warren West
+t0014860,18war-op,50,0,0,0,0,Warren West
+t0014898,18war-op,23,10,0,0,0,Warren West
+t0014908,18war-op,40,6,0,0,0,Warren West
+t0015202,18war-op,50,0,0,0,0,Warren West
+t0015482,18war-op,54,0,0,0,0,Warren West
+t0015528,18war-op,50,0,0,0,0,Warren West
+t0015568,18war-op,45,19,4,2,115.75,Warren West
+t0015654,18war-op,53,0,0,0,0,Warren West
+t0015707,18war-op,50,0,0,0,0,Warren West
+t0015720,18war-op,50,0,0,0,0,Warren West
+t0015791,18war-op,61,0,0,0,0,Warren West
+t0015834,18war-op,50,9,1,4,25,Warren West
+t0015836,18war-op,50,6,0,0,0,Warren West
+t0015872,18war-op,51,0,0,0,0,Warren West
+t0015876,18war-op,62,39,9,16,283.666666666667,Warren West
+t0016005,18war-op,49,0,0,0,0,Warren West
+t0016029,18war-op,48,10,4,2,291,Warren West
+t0016055,18war-op,47,0,0,0,0,Warren West
+t0016115,18war-op,58,0,0,0,0,Warren West
+t0016200,18war-op,46,0,0,0,0,Warren West
+t0016370,18war-op,44,15,3,7,248,Warren West
+t0016387,18war-op,45,20,12,11.5,250.916666666667,Warren West
+t0016464,18war-op,23,16,1,2,228,Warren West
+t0016577,18war-op,40,0,0,0,0,Warren West
+t0016723,18war-op,43,5,1,7,149,Warren West
+t0016780,18war-op,40,0,0,0,0,Warren West
+t0016853,18war-op,40,0,0,0,0,Warren West
+t0016884,18war-op,39,0,0,0,0,Warren West
+t0016896,18war-op,39,4,1,12,1,Warren West
+t0020112,18war-op,34,7,0,0,0,Warren West
+t0020534,18war-op,14,0,0,0,0,Warren West
+t0020783,18war-op,26,22,0,0,0,Warren West
+t0024841,18war-op,34,10,3,2,237,Warren West
+t0024847,18war-op,43,17,5,2,226.4,Warren West
+t0024883,18war-op,40,16,0,0,0,Warren West
+t0024890,18war-op,31,1,1,8,204,Warren West
+t0024903,18war-op,12,0,0,0,0,Warren West
+t0024925,18war-op,35,21,15,8,151.066666666667,Warren West
+t0024965,18war-op,19,6,0,0,0,Warren West
+t0024992,18war-op,43,27,1,2,120,Warren West
+t0025081,18war-op,34,0,0,0,0,Warren West
+t0025127,18war-op,35,14,4,2,242.75,Warren West
+t0034304,18war-op,19,2,0,0,0,Warren West
+t0036971,18war-op,26,20,0,0,0,Warren West
+t0036999,18war-op,26,2,0,0,0,Warren West
+t0037003,18war-op,26,0,0,0,0,Warren West
+t0037029,18war-op,24,0,0,0,0,Warren West
+t0037407,18war-op,22,14,1,2,55,Warren West
+t0037539,18war-op,22,0,0,0,0,Warren West
+t0037540,18war-op,21,1,1,1,36,Warren West
+t0037561,18war-op,22,14,0,0,0,Warren West
+t0037563,18war-op,14,1,0,0,0,Warren West
+t0038031,18war-op,14,0,0,0,0,Warren West
+t0038033,18war-op,12,0,0,0,0,Warren West
