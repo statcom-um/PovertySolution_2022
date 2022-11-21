@@ -1,5 +1,6 @@
 #--- Source Necessary Packages -------------------------------------------------
 
+
 library(pacman)
 
 `%notin%` <- Negate(`%in%`)
@@ -49,8 +50,7 @@ p_load(
 
 #directory based programming
 data_folder = file.path(here::here(),
-                        'data',
-                        'Receivable\ Analytics',
+                        'data', 'Receivable\ Analytics',
                         'DHC\ Owned\ and\ Managed')
 my_files = list.files(data_folder, pattern = '.xlsx')
 
@@ -58,7 +58,7 @@ my_files = list.files(data_folder, pattern = '.xlsx')
 building_names = word(my_files, 1, sep = '_')
 
 #read in all excel files
-my_buildings = file.path(data_folder, my_files) %>%
+rent_ledger = file.path(data_folder, my_files) %>%
   map(., read_xlsx, col_type = 'text')
 
 #data cleaning as a function as written in 2022_02_25.R
@@ -90,7 +90,7 @@ clean_buildings = function(dat) {
         ),
         NA_character_
       ) %>% factor(),
-      Transaction = Transaction |> as.numeric() |> as_date(origin = "1899-12-30 UTC"),
+      Transaction = Transaction %>% as.numeric() %>% as_date(origin = "1899-12-30 UTC"),
       across(Charges:Balance, as.numeric)
     ) %>%
     #--- Impute Resident T-Codes
@@ -113,4 +113,5 @@ clean_buildings = function(dat) {
     return(new_dat)
 }
 #apply function to list of buildings
-my_buildings = my_buildings %>% map(., clean_buildings)
+my_buildings = rent_ledger %>% map(., clean_buildings)
+my_tenants = rent_ledger %>% map_dfr(., clean_buildings)

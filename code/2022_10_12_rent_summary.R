@@ -51,24 +51,24 @@ source(file.path(here(), "code", "2022_10_12_scrape_rent_ledger.R"))
 
 ## find out how many times tenant had late payment
 clean_rent_late_count = function(dat) {
-  return(left_join(dat |> 
-                     filter(grepl("Tenant Rent", Charge)) |>
-                     filter(Charges > 0) |>
-                     rowwise() |>
-                     mutate(late_by = day(Transaction)) |>
-                     group_by(Customer) |>
+  return(left_join(dat %>% 
+                     filter(grepl("Tenant Rent", Charge)) %>%
+                     filter(Charges > 0) %>%
+                     rowwise() %>%
+                     mutate(late_by = day(Transaction)) %>%
+                     group_by(Customer) %>%
                      summarise(total = n()), 
-                   dat |> 
-                     filter(grepl("Tenant Late Charge", Charge)) |>
-                     rowwise() |>
-                     mutate(late_by = day(Transaction)) |>
-                     group_by(Customer) |>
+                   dat %>% 
+                     filter(grepl("Tenant Late Charge", Charge)) %>%
+                     rowwise() %>%
+                     mutate(late_by = day(Transaction)) %>%
+                     group_by(Customer) %>%
                      summarise(late = n()) 
   ))
 }
 
 late_count <- my_buildings %>% 
-  map_dfr(., clean_rent_late_count) |>
+  map_dfr(., clean_rent_late_count) %>%
   mutate(late = ifelse(is.na(late), 0, late))
 
 tenants = my_buildings[[1]]
@@ -80,32 +80,32 @@ for(i in 2:12){
 ## find out when tenant paid in same month after late fees added
 clean_rent_late_count = function(id) {
   
-  dat <- tenants |>
-    filter(Customer == id) |>
+  dat <- tenants %>%
+    filter(Customer == id) %>%
     mutate(index = seq_along(Charge)) 
   
-  pos <- dat |> 
-    filter(grepl("Tenant Late Charge", Charge)) |>
+  pos <- dat %>% 
+    filter(grepl("Tenant Late Charge", Charge)) %>%
     pull(index) + 1
   
-  month <- dat |> 
-    filter(grepl("Tenant Late Charge", Charge)) |>
-    select(c(index, Transaction, Receipts, Charge, Balance)) |>
-    mutate(month = lubridate::month(Transaction)) |>
-    select(c(index, Transaction, month, Charge)) |>
+  month <- dat %>% 
+    filter(grepl("Tenant Late Charge", Charge)) %>%
+    select(c(index, Transaction, Receipts, Charge, Balance)) %>%
+    mutate(month = lubridate::month(Transaction)) %>%
+    select(c(index, Transaction, month, Charge)) %>%
     rename(month_rent = month)
   
-  payment <- dat |> 
-    select(c(index, Transaction, Receipts)) |>
-    filter(Receipts < 0) |>
+  payment <- dat %>% 
+    select(c(index, Transaction, Receipts)) %>%
+    filter(Receipts < 0) %>%
     mutate(index = index - 1, 
            month_pay = lubridate::month(Transaction))
   
-  same <- left_join(payment, month, by = "index") |>
-    filter(month_pay == month_rent) |> 
+  same <- left_join(payment, month, by = "index") %>%
+    filter(month_pay == month_rent) %>% 
     mutate(late_duration = as.numeric(Transaction.x - Transaction.y), 
-           rent = -Receipts) |>
-    select(c(index, late_duration, rent, Transaction.x)) |>
+           rent = -Receipts) %>%
+    select(c(index, late_duration, rent, Transaction.x)) %>%
     rename(date = Transaction.x)
   
   if(nrow(same) == 0){
@@ -121,29 +121,29 @@ for(id in unique(tenants$Customer)[-1]){
                clean_rent_late_count(as.character(id)))
 }
 
-dat <- full_join(as_tibble(same) |>
+dat <- full_join(as_tibble(same) %>%
                    mutate(V2 = as.numeric(V2), 
                           V3 = as.numeric(V3), 
-                          V4 = as.numeric(V4)) |>
+                          V4 = as.numeric(V4)) %>%
                    rename(same_times = V2, 
                           median_late_duration = V3, 
                           mean_late_amount = V4, 
                           tid = V1), 
-                 late_count |> rename(tid = Customer)) |>
+                 late_count %>% rename(tid = Customer)) %>%
   rename(late_same = same_times, 
          late_duration = median_late_duration, 
-         late_amount = mean_late_amount) |>
+         late_amount = mean_late_amount) %>%
   select(c(tid, total, late, late_same, late_duration, late_amount))
 
-dat <- left_join(tenants |> 
-                   rename(tid = Customer, location = Property) |> 
-                   select(c(location, tid)) |> 
-                   group_by(tid) |> 
+dat <- left_join(tenants %>% 
+                   rename(tid = Customer, location = Property) %>% 
+                   select(c(location, tid)) %>% 
+                   group_by(tid) %>% 
                    summarise(tid = unique(tid), 
-                             location = unique(location)) |>
-                   filter(location != "Grand Total") |>
+                             location = unique(location)) %>%
+                   filter(location != "Grand Total") %>%
                    drop_na(), 
-                 dat) |>
+                 dat) %>%
   drop_na()
 
 loc_code = dat %>% pull(location) %>% unique()
@@ -199,7 +199,7 @@ dat  %>%
 ## scatterplot of delay in rent payment vs amount of rent due
 dat  %>%
   filter(late_same > 0, late_amount > 0, late_duration > 0) %>% 
-  ggplot(aes(x = late_duration, y = late_amount, color = name)) +
+  ggplot(aes(x = late_duration, y = late_amount, color = name)) + 
   geom_point() +
   scale_fill_futurama() +
   theme_bw() +

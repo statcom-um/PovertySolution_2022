@@ -1,0 +1,89 @@
+---
+title: "Descriptive Stats_Victoria"
+author: "Victoria Fisher"
+date: '2022-11-21'
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(pacman)
+
+p_load(tidyverse,
+       gtsummary,
+       ggplot2)
+
+```
+
+```{r}
+##Data
+
+descrip <- X2022_07_31
+
+##Renaming
+#-----
+class(descrip$Sex)
+
+descrip$SexF <- as.factor(descrip$Sex)
+
+descrip$Age <- descrip$`Age on effective date of action`
+
+descrip$Household <- descrip$`Total number in household`
+
+descrip$Depends <- descrip$`Number of dependents`
+
+descrip$Beds <- descrip$`Number of bedrooms in unit`
+
+descrip$AdjInc <- descrip$`Adjusted annual income: 8a minus 8x (if 8x is larger, put 0)`
+
+descrip$AdjIncTTP <- descrip$`TTP if based on adjusted annual income: (9d x 9e) / 100`
+
+descrip$RecentTTP <- descrip$`Most recent ( Previous)TTP`
+
+descrip$Utility <- descrip$`Utility allowance, if any`
+
+descrip$Rent <- descrip$`Tenant rent: 10d minus 10en If positive or 0, put tenant rent If negative, credit tenant`
+```
+
+
+```{r}
+#Checking variable class
+
+class(descrip$Household)
+
+descrip$Household <- as.factor(descrip$Household)
+
+class(descrip$Beds)
+
+descrip$Beds <- as.factor(descrip$Beds)
+
+class(descrip$RecentTTP)
+
+summary(descrip$RecentTTP)
+```
+
+
+```{r}
+##Omit NAs
+
+descrip.na <- na.omit(descrip)
+
+```
+
+
+```{r}
+#Covariates
+
+covars <- descrip.na %>% select(Age, SexF, AdjInc, Household, Depends, Beds, Rent, Utility, AdjIncTTP, RecentTTP)
+
+#Table
+
+covars %>% tbl_summary(
+  by=NULL,
+  statistic = list(all_continuous() ~ "{mean}({sd})",
+                   all_categorical() ~ "{n} ({p})"),
+  label = list(Age ~ "Age at activation", SexF ~ "Sex", AdjInc ~ "Adjusted Income", Household ~ "Number in household", Depends ~ "Number of dependents", Beds ~ "Number of bedrooms", Rent ~ "Tenant Rent", Utility ~ "Utility Allowance", AdjIncTTP ~ "TTP adjusted for income", RecentTTP ~ "Most recent TTP")
+)
+
+```
+
