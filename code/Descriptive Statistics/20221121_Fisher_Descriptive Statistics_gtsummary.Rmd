@@ -87,3 +87,147 @@ covars %>% tbl_summary(
 
 ```
 
+```{r}
+
+head(combined)
+
+all_buildings <- read_csv("/Users/victoriafisher/Dropbox (University of Michigan)/PovertySolution_2022/data/created_data/All_Households.csv")
+
+
+head(all_buildings)
+
+
+all_buildings$tid <- all_buildings$Tenant
+
+
+descriptive_buildings <- merge(descrip, all_buildings, by = "tid")
+
+
+descriptive_buildings$Building <- ifelse(descriptive_buildings$Property == "28alg-op", "Algonquin", 
+                                         ifelse(descriptive_buildings$Property == "01bre-op", "Brewster",
+                                                ifelse(descriptive_buildings$Property == "03dig-op", "Diggs", 
+                                                       ifelse(descriptive_buildings$Property == "03for-op", "Forest Park",
+                                                              ifelse(descriptive_buildings$Property == "29gre-op", "Greenbrooke",
+                                                                     ifelse(descriptive_buildings$Property == "11riv-op", "Riverbend",
+                                                                            ifelse(descriptive_buildings$Property == "14ssc-op", "Scattered Sites Central",
+                                                                                   ifelse(descriptive_buildings$Property == "13sse-op", "Scattered Sites East", 
+                                                                                          ifelse(descriptive_buildings$Property == "12ssw-op","Scattered Sites West", 
+                                                                                                 ifelse(descriptive_buildings$Property == "15she-op", "Sheridan", 
+                                                                                                        ifelse(descriptive_buildings$Property == "16smi-op", "Smith Homes",
+                                                                                                               ifelse(descriptive_buildings$Property == "18war-op", "Warren West", ""))))))))))))
+                                                                                                           
+head(descriptive_buildings)
+
+```
+```{r}
+
+descrip_data <- descriptive_buildings %>% select("tid", "Age", "SexF", "Household", "Depends", "Beds", "AdjInc", "AdjIncTTP", "RecentTTP", "Utility", "Rent", "Building")
+
+descrip_na <- na.omit(descrip_data)
+
+```
+
+
+```{r}
+##Table by building?
+
+class(descriptive_buildings$Building)
+
+descriptive_buildings$BuildingFac <- as.factor(descriptive_buildings$Building)
+
+descrip_data <- descriptive_buildings %>% select("tid", "Age", "SexF", "Household", "Depends", "Beds", "AdjInc", "AdjIncTTP", "RecentTTP", "Utility", "Rent", "BuildingFac")
+
+descrip_na <- na.omit(descrip_data)
+
+covars <- descrip_na %>% select(BuildingFac, Age, SexF, AdjInc, Household, Depends, Beds, Rent, Utility, AdjIncTTP, RecentTTP)
+
+#Table
+
+covars %>% tbl_summary(
+  by=BuildingFac,
+  statistic = list(all_continuous() ~ "{mean}({sd})",
+                   all_categorical() ~ "{n} ({p})"),
+  label = list(Age ~ "Age at activation", SexF ~ "Sex", AdjInc ~ "Adjusted Income", Household ~ "Number in household", Depends ~ "Number of dependents", Beds ~ "Number of bedrooms", Rent ~ "Tenant Rent", Utility ~ "Utility Allowance", AdjIncTTP ~ "TTP adjusted for income", RecentTTP ~ "Most recent TTP")
+)
+
+
+buildings <- covars %>% tbl_summary(
+  by=BuildingFac,
+  statistic = list(all_continuous() ~ "{mean}({sd})",
+                   all_categorical() ~ "{n} ({p})"),
+  label = list(Age ~ "Age at activation", SexF ~ "Sex", AdjInc ~ "Adjusted Income", Household ~ "Number in household", Depends ~ "Number of dependents", Beds ~ "Number of bedrooms", Rent ~ "Tenant Rent", Utility ~ "Utility Allowance", AdjIncTTP ~ "TTP adjusted for income", RecentTTP ~ "Most recent TTP")
+)
+buildings
+
+gt::gtsave(as_gt(buildings), file = "building descriptive stats.png",  path = "/Users/victoriafisher/Dropbox (University of Michigan)/PovertySolution_2022/code/Descriptive Statistics")
+#Can't get the table to save as an image
+
+```
+
+```{r}
+##Histogram of Income
+
+ggplot(covars, aes(AdjInc))+
+  geom_histogram(
+    bins=50
+  )
+
+summary(covars$AdjInc)
+
+##Histogram of Rent
+
+ggplot(covars, aes(Rent))+
+  geom_histogram(
+    bins=50
+  )
+
+summary(covars$Rent)
+
+##Histogram of TTP
+
+ggplot(covars, aes(AdjIncTTP))+
+  geom_histogram(
+    bins=50
+  )
+
+summary(covars$AdjIncTTP)
+
+
+tapply(descriptive_buildings$AdjIncTTP, descriptive_buildings$BuildingFac, summary)
+
+```
+```{r}
+##GGlots
+#Age by building
+
+age_plot <- ggplot(descriptive_buildings, aes(BuildingFac, Age))+
+  geom_violin()+
+  theme_minimal()
+
+ggsave(age_plot, width = 2400, height = 900, dpi = 150, units = "px", file = "/Users/victoriafisher/Dropbox (University of Michigan)/PovertySolution_2022/plots/age_plot.jpg")
+
+
+#Number of Dependents by Rent
+
+class(descriptive_buildings$Depends)
+
+descriptive_buildings$Dependents <- as.factor(descriptive_buildings$Depends)
+
+
+dependents_rent <- ggplot(descriptive_buildings, aes(Dependents, Rent))+
+  geom_boxplot()+
+  theme_minimal()
+
+ggsave(dependents_rent, width = 1200, height = 600, dpi = 150, units = "px", file = "/Users/victoriafisher/Dropbox (University of Michigan)/PovertySolution_2022/plots/dep_rent.jpg")
+
+#Number of Dependents by Income
+
+
+ggplot(descriptive_buildings, aes(Dependents, AdjInc))+
+  geom_boxplot()+
+  ylim(0,50000)+
+  theme_minimal()
+
+ggsave(dependents_rent, width = 1200, height = 600, dpi = 150, units = "px", file = "/Users/victoriafisher/Dropbox (University of Michigan)/PovertySolution_2022/plots/dep_rent.jpg")
+```
+
