@@ -1,0 +1,512 @@
+drop_na()
+data <- data %>% select(colnames(data)[c(1, 2, 3, 4, 5, 6, 7, 11, 12, 13, 14)])
+colnames(data) <- c("tid", "age", "sex", "num_hh", "num_dep", "num_br", "income", "rent", "total_trans", "late_trans", "property")
+modified_p <- function(x, n){
+prop.test(x, n, conf.level = 0.50)$conf.int[1]
+}
+rent_late <- read_csv(file.path(here(), "data", "created_data", "2022_11_21.csv"))
+prop <- rent_late %>%
+group_by(Customer) %>%
+summarise(tid = unique(Customer), total = n(), late = sum(!is.na(lateFees))) %>%
+select(tid, total, late)
+covariates <- read_csv(file.path(here(), "data", "created_data", "2022_07_31.csv"))
+data <- covariates %>%
+left_join(prop) %>%
+left_join((my_tenants %>% select(Customer, Property) %>% rename(tid = Customer) %>% unique() %>% drop_na())) %>%
+drop_na()
+data <- data %>% select(colnames(data)[c(1, 2, 3, 4, 5, 6, 7, 11, 12, 13, 14)])
+colnames(data) <- c("tid", "age", "sex", "num_hh", "num_dep", "num_br", "income", "rent", "total_trans", "late_trans", "property")
+modified_p <- function(x, n){
+prop.test(x, n, conf.level = 0.50)$conf.int[1]
+}
+data <- data %>%
+rowwise() %>%
+mutate(mod_p = modified_p(late_trans, total_trans))
+data %>%
+ggplot(aes(x = property, y = mod_p, fill = property)) +
+geom_violin()
+data %>%
+ggplot(aes(x = property, y = mod_p, fill = property)) +
+geom_violin() +
+coord_flip()
+library(pacman)
+`%notin%` <- Negate(`%in%`)
+p_load(
+#--- Packages to Fit Models
+MASS, logistf, survival,
+#--- Packages to Produce Tables
+gtsummary, flextable, janitor, broom, officer, kableExtra, reactable,
+#--- Packages to Produce Figures
+crayon, ggsci, ggridges, ggthemes, ggforce, ggpubr, patchwork, grid, gridExtra, plotly,  survminer, viridis, ggridges, hrbrthemes, stickylabeller, latex2exp, scales, glue,
+#--- Packages for Data Retrieval & Pre-Processing
+readxl, here, rdrop2, lubridate, zoo, tidyverse, purrr, data.table, stringr, tidyr
+)
+### load old stuff, might need to redefine proportion code
+source(file.path(here(), "code", "2022_11_21_soumik.R"))
+data
+data %>% group_by(property) %>% summarise(n = n())
+data %>% filter(property == "Grand Total")
+library(pacman)
+`%notin%` <- Negate(`%in%`)
+p_load(
+#--- Packages to Fit Models
+MASS, logistf, survival,
+#--- Packages to Produce Tables
+gtsummary, flextable, janitor, broom, officer, kableExtra, reactable,
+#--- Packages to Produce Figures
+crayon, ggsci, ggridges, ggthemes, ggforce, ggpubr, patchwork, grid, gridExtra, plotly,  survminer, viridis, ggridges, hrbrthemes, stickylabeller, latex2exp, scales, glue,
+#--- Packages for Data Retrieval & Pre-Processing
+readxl, here, rdrop2, lubridate, zoo, tidyverse, purrr, data.table, stringr, tidyr
+)
+### load old stuff, might need to redefine proportion code
+source(file.path(here(), "code", "2022_10_12_scrape_rent_ledger.R"))
+run = FALSE ### save running time
+if(run == TRUE){
+## find out how many times tenant had late payment (modifed from last time, had processing error)
+clean_rent_late_count = function(temp) {
+due <- temp %>% filter(Charges > 0) %>% filter(grepl("Tenant Rent", Charge)) %>%
+mutate(y = year(Transaction),
+m = month(Transaction)) %>%
+select(Customer, y, m, Charges) %>% rename(rentFees = Charges)
+late <- temp %>% filter(Charges > 0) %>% filter(grepl("Tenant Late Charge", Charge)) %>%
+mutate(y = year(Transaction),
+m = month(Transaction),
+d = day(Transaction)) %>%
+select(Customer, y, m, d, Charges) %>% rename(lateFees = Charges)
+return(due %>% left_join(late))
+}
+rent_late <- group_split(my_tenants %>% group_by(Customer)) %>%
+map_dfr(., clean_rent_late_count)
+}else{
+rent_late <- read_csv(file.path(here(), "data", "created_data", "2022_11_21.csv"))
+}
+prop <- rent_late %>%
+group_by(Customer) %>%
+summarise(tid = unique(Customer), total = n(), late = sum(!is.na(lateFees))) %>%
+select(tid, total, late)
+covariates <- read_csv(file.path(here(), "data", "created_data", "2022_07_31.csv"))
+data <- covariates %>%
+left_join(prop) %>%
+left_join((my_tenants %>% select(Customer, Property) %>% rename(tid = Customer) %>% unique() %>% drop_na())) %>%
+drop_na()
+data <- data %>% select(colnames(data)[c(1, 2, 3, 4, 5, 6, 7, 11, 12, 13, 14)])
+colnames(data) <- c("tid", "age", "sex", "num_hh", "num_dep", "num_br", "income", "rent", "total_trans", "late_trans", "property")
+data
+data %>% mutate(p = late_trans/total_trans) %>%
+select(-c(total_trans, late_trans))
+covariates
+data <- covariates %>%
+left_join(prop) %>%
+drop_na()
+library(pacman)
+`%notin%` <- Negate(`%in%`)
+p_load(
+#--- Packages to Fit Models
+MASS, logistf, survival,
+#--- Packages to Produce Tables
+gtsummary, flextable, janitor, broom, officer, kableExtra, reactable,
+#--- Packages to Produce Figures
+crayon, ggsci, ggridges, ggthemes, ggforce, ggpubr, patchwork, grid, gridExtra, plotly,  survminer, viridis, ggridges, hrbrthemes, stickylabeller, latex2exp, scales, glue,
+#--- Packages for Data Retrieval & Pre-Processing
+readxl, here, rdrop2, lubridate, zoo, tidyverse, purrr, data.table, stringr, tidyr
+)
+### load old stuff, might need to redefine proportion code
+source(file.path(here(), "code", "2022_10_12_scrape_rent_ledger.R"))
+run = FALSE ### save running time
+if(run == TRUE){
+## find out how many times tenant had late payment (modifed from last time, had processing error)
+clean_rent_late_count = function(temp) {
+due <- temp %>% filter(Charges > 0) %>% filter(grepl("Tenant Rent", Charge)) %>%
+mutate(y = year(Transaction),
+m = month(Transaction)) %>%
+select(Customer, y, m, Charges) %>% rename(rentFees = Charges)
+late <- temp %>% filter(Charges > 0) %>% filter(grepl("Tenant Late Charge", Charge)) %>%
+mutate(y = year(Transaction),
+m = month(Transaction),
+d = day(Transaction)) %>%
+select(Customer, y, m, d, Charges) %>% rename(lateFees = Charges)
+return(due %>% left_join(late))
+}
+rent_late <- group_split(my_tenants %>% group_by(Customer)) %>%
+map_dfr(., clean_rent_late_count)
+}else{
+rent_late <- read_csv(file.path(here(), "data", "created_data", "2022_11_21.csv"))
+}
+prop <- rent_late %>%
+group_by(Customer) %>%
+summarise(tid = unique(Customer), total = n(), late = sum(!is.na(lateFees))) %>%
+select(tid, total, late)
+covariates <- read_csv(file.path(here(), "data", "created_data", "2022_07_31.csv"))
+data <- covariates %>%
+left_join(prop) %>%
+drop_na()
+data <- data %>% select(colnames(data)[c(1, 2, 3, 4, 5, 6, 7, 11, 12, 13, 14)])
+data %>% mutate(p = late_trans/total_trans)
+data
+prop <- rent_late %>%
+group_by(Customer) %>%
+summarise(tid = unique(Customer), total = n(), late = sum(!is.na(lateFees))) %>%
+select(tid, total, late)
+covariates <- read_csv(file.path(here(), "data", "created_data", "2022_07_31.csv"))
+data <- covariates %>%
+left_join(prop) %>%
+drop_na()
+data <- data %>% select(colnames(data)[c(1, 2, 3, 4, 5, 6, 7, 11, 12, 13, 14)])
+colnames(data) <- c("tid", "age", "sex", "num_hh", "num_dep", "num_br", "income", "rent", "total_trans", "late_trans", "property")
+data
+data <- data %>% select(colnames(data)[c(1, 2, 3, 4, 5, 6, 7, 11, 12, 13)])
+colnames(data)[c(1, 2, 3, 4, 5, 6, 7, 11, 12, 13)]
+library(pacman)
+`%notin%` <- Negate(`%in%`)
+p_load(
+#--- Packages to Fit Models
+MASS, logistf, survival,
+#--- Packages to Produce Tables
+gtsummary, flextable, janitor, broom, officer, kableExtra, reactable,
+#--- Packages to Produce Figures
+crayon, ggsci, ggridges, ggthemes, ggforce, ggpubr, patchwork, grid, gridExtra, plotly,  survminer, viridis, ggridges, hrbrthemes, stickylabeller, latex2exp, scales, glue,
+#--- Packages for Data Retrieval & Pre-Processing
+readxl, here, rdrop2, lubridate, zoo, tidyverse, purrr, data.table, stringr, tidyr
+)
+### load old stuff, might need to redefine proportion code
+source(file.path(here(), "code", "2022_10_12_scrape_rent_ledger.R"))
+run = FALSE ### save running time
+if(run == TRUE){
+## find out how many times tenant had late payment (modifed from last time, had processing error)
+clean_rent_late_count = function(temp) {
+due <- temp %>% filter(Charges > 0) %>% filter(grepl("Tenant Rent", Charge)) %>%
+mutate(y = year(Transaction),
+m = month(Transaction)) %>%
+select(Customer, y, m, Charges) %>% rename(rentFees = Charges)
+late <- temp %>% filter(Charges > 0) %>% filter(grepl("Tenant Late Charge", Charge)) %>%
+mutate(y = year(Transaction),
+m = month(Transaction),
+d = day(Transaction)) %>%
+select(Customer, y, m, d, Charges) %>% rename(lateFees = Charges)
+return(due %>% left_join(late))
+}
+rent_late <- group_split(my_tenants %>% group_by(Customer)) %>%
+map_dfr(., clean_rent_late_count)
+}else{
+rent_late <- read_csv(file.path(here(), "data", "created_data", "2022_11_21.csv"))
+}
+prop <- rent_late %>%
+group_by(Customer) %>%
+summarise(tid = unique(Customer), total = n(), late = sum(!is.na(lateFees))) %>%
+select(tid, total, late)
+covariates <- read_csv(file.path(here(), "data", "created_data", "2022_07_31.csv"))
+data <- covariates %>%
+left_join(prop) %>%
+drop_na()
+data
+colnames(data)
+data %>% select(colnames(data)[c(1, 2, 3, 4, 5, 6, 7, 11, 12, 13)])
+data <- data %>% select(colnames(data)[c(1, 2, 3, 4, 5, 6, 7, 11, 12, 13)])
+colnames(data) <- c("tid", "age", "sex", "num_hh", "num_dep", "num_br", "income", "rent", "total_trans", "late_trans")
+data
+data %>% mutate(p = late_trans/total_trans) %>%
+select(-c(total_trans, late_trans))
+data
+data %>% write_csv(file.path(here(), "data", "created_data", "2022_11_22.csv"))
+?binconf
+require(Hmisc)
+?binconf
+binconf(46,50,method="all")
+binconf(2,4,method="all")
+binconf(20,40,method="all")
+binconf(20,40,alpha=0.5, method="all")
+binconf(20,40,alpha=0.5,method="all")
+binconf(2,4,alpha=0.5,method="all")
+knitr::opts_chunk$set(echo = TRUE)
+library(pacman)
+p_load(tidyverse,
+gtsummary,
+ggplot2)
+descrip <- X2022_07_31
+setwd("~/Dropbox (University of Michigan)/PovertySolution_2022")
+setwd("~/Dropbox (University of Michigan)/PovertySolution_2022/data/created_data")
+library(readr)
+X2022_07_31 <- read_csv("2022_07_31.csv")
+View(X2022_07_31)
+descrip <- X2022_07_31
+class(descrip$Sex)
+descrip$SexF <- as.factor(descrip$Sex)
+descrip$Age <- descrip$`Age on effective date of action`
+descrip$Household <- descrip$`Total number in household`
+descrip$Depends <- descrip$`Number of dependents`
+descrip$Beds <- descrip$`Number of bedrooms in unit`
+descrip$AdjInc <- descrip$`Adjusted annual income: 8a minus 8x (if 8x is larger, put 0)`
+descrip$AdjIncTTP <- descrip$`TTP if based on adjusted annual income: (9d x 9e) / 100`
+descrip$RecentTTP <- descrip$`Most recent ( Previous)TTP`
+descrip$Utility <- descrip$`Utility allowance, if any`
+descrip$Rent <- descrip$`Tenant rent: 10d minus 10en If positive or 0, put tenant rent If negative, credit tenant`
+class(descrip$Household)
+descrip$Household <- as.factor(descrip$Household)
+class(descrip$Beds)
+descrip$Beds <- as.factor(descrip$Beds)
+class(descrip$RecentTTP)
+summary(descrip$RecentTTP)
+descrip.na <- na.omit(descrip)
+covars <- descrip.na %>% select(Age, SexF, AdjInc, Household, Depends, Beds, Rent, Utility, AdjIncTTP, RecentTTP)
+covars %>% tbl_summary(
+by=NULL,
+statistic = list(all_continuous() ~ "{mean}({sd})",
+all_categorical() ~ "{n} ({p})"),
+label = list(Age ~ "Age at activation", SexF ~ "Sex", AdjInc ~ "Adjusted Income", Household ~ "Number in household", Depends ~ "Number of dependents", Beds ~ "Number of bedrooms", Rent ~ "Tenant Rent", Utility ~ "Utility Allowance", AdjIncTTP ~ "TTP adjusted for income", RecentTTP ~ "Most recent TTP")
+)
+all_buildings <- read_csv("/Users/victoriafisher/Dropbox (University of Michigan)/PovertySolution_2022/data/created_data/All_Households.csv")
+head(all_buildings)
+all_buildings$tid <- all_buildings$Tenant
+descriptive_buildings <- merge(descrip, all_buildings, by = "tid")
+descriptive_buildings$Building <- ifelse(descriptive_buildings$Property == "28alg-op", "Algonquin",
+ifelse(descriptive_buildings$Property == "01bre-op", "Brewster",
+ifelse(descriptive_buildings$Property == "03dig-op", "Diggs",
+ifelse(descriptive_buildings$Property == "03for-op", "Forest Park",
+ifelse(descriptive_buildings$Property == "29gre-op", "Greenbrooke",
+ifelse(descriptive_buildings$Property == "11riv-op", "Riverbend",
+ifelse(descriptive_buildings$Property == "14ssc-op", "Scattered Sites Central",
+ifelse(descriptive_buildings$Property == "13sse-op", "Scattered Sites East",
+ifelse(descriptive_buildings$Property == "12ssw-op","Scattered Sites West",
+ifelse(descriptive_buildings$Property == "15she-op", "Sheridan",
+ifelse(descriptive_buildings$Property == "16smi-op", "Smith Homes",
+ifelse(descriptive_buildings$Property == "18war-op", "Warren West", ""))))))))))))
+head(descriptive_buildings)
+descrip_data <- descriptive_buildings %>% select("tid", "Age", "SexF", "Household", "Depends", "Beds", "AdjInc", "AdjIncTTP", "RecentTTP", "Utility", "Rent", "BuildingFac")
+View(X2022_07_31)
+descrip_data <- descriptive_buildings %>% select("tid", "Age", "SexF", "Household", "Depends", "Beds", "AdjInc", "AdjIncTTP", "RecentTTP", "Utility", "Rent", "Building")
+descrip_na <- na.omit(descrip_data)
+class(descriptive_buildings$Building)
+descriptive_buildings$BuildingFac <- as.factor(descriptive_buildings$Building)
+covars <- descrip_na %>% select(BuildingFac, Age, SexF, AdjInc, Household, Depends, Beds, Rent, Utility, AdjIncTTP, RecentTTP)
+descrip_data <- descriptive_buildings %>% select("tid", "Age", "SexF", "Household", "Depends", "Beds", "AdjInc", "AdjIncTTP", "RecentTTP", "Utility", "Rent", "Building")
+descrip_data <- descriptive_buildings %>% select("tid", "Age", "SexF", "Household", "Depends", "Beds", "AdjInc", "AdjIncTTP", "RecentTTP", "Utility", "Rent", "BuildingFac")
+descrip_na <- na.omit(descrip_data)
+covars <- descrip_na %>% select(BuildingFac, Age, SexF, AdjInc, Household, Depends, Beds, Rent, Utility, AdjIncTTP, RecentTTP)
+covars %>% tbl_summary(
+by=BuildingFac,
+statistic = list(all_continuous() ~ "{mean}({sd})",
+all_categorical() ~ "{n} ({p})"),
+label = list(Age ~ "Age at activation", SexF ~ "Sex", AdjInc ~ "Adjusted Income", Household ~ "Number in household", Depends ~ "Number of dependents", Beds ~ "Number of bedrooms", Rent ~ "Tenant Rent", Utility ~ "Utility Allowance", AdjIncTTP ~ "TTP adjusted for income", RecentTTP ~ "Most recent TTP")
+)
+buildings <- covars %>% tbl_summary(
+by=BuildingFac,
+statistic = list(all_continuous() ~ "{mean}({sd})",
+all_categorical() ~ "{n} ({p})"),
+label = list(Age ~ "Age at activation", SexF ~ "Sex", AdjInc ~ "Adjusted Income", Household ~ "Number in household", Depends ~ "Number of dependents", Beds ~ "Number of bedrooms", Rent ~ "Tenant Rent", Utility ~ "Utility Allowance", AdjIncTTP ~ "TTP adjusted for income", RecentTTP ~ "Most recent TTP")
+)
+buildings
+buildings <- covars %>% tbl_summary(
+by=BuildingFac,
+statistic = list(all_continuous() ~ "{mean}({sd})",
+all_categorical() ~ "{n} ({p})"),
+label = list(Age ~ "Age at activation", SexF ~ "Sex", AdjInc ~ "Adjusted Income", Household ~ "Number in household", Depends ~ "Number of dependents", Beds ~ "Number of bedrooms", Rent ~ "Tenant Rent", Utility ~ "Utility Allowance", AdjIncTTP ~ "TTP adjusted for income", RecentTTP ~ "Most recent TTP") %>% add_p()
+)
+buildings <- covars %>% tbl_summary(
+by=BuildingFac,
+statistic = list(all_continuous() ~ "{mean}({sd})",
+all_categorical() ~ "{n} ({p})"),
+label = list(Age ~ "Age at activation", SexF ~ "Sex", AdjInc ~ "Adjusted Income", Household ~ "Number in household", Depends ~ "Number of dependents", Beds ~ "Number of bedrooms", Rent ~ "Tenant Rent", Utility ~ "Utility Allowance", AdjIncTTP ~ "TTP adjusted for income", RecentTTP ~ "Most recent TTP")
+)  %>% add_p()
+buildings <- covars %>% tbl_summary(
+by=BuildingFac,
+statistic = list(all_continuous() ~ "{mean}({sd})",
+all_categorical() ~ "{n} ({p})"),
+label = list(Age ~ "Age at activation", SexF ~ "Sex", AdjInc ~ "Adjusted Income", Household ~ "Number in household", Depends ~ "Number of dependents", Beds ~ "Number of bedrooms", Rent ~ "Tenant Rent", Utility ~ "Utility Allowance", AdjIncTTP ~ "TTP adjusted for income", RecentTTP ~ "Most recent TTP")
+)  %>% add_p()
+buildings
+buildings <- covars %>% tbl_summary(
+by=BuildingFac,
+statistic = list(all_continuous() ~ "{mean}({sd})",
+all_categorical() ~ "{n} ({p})"),
+label = list(Age ~ "Age at activation", SexF ~ "Sex", AdjInc ~ "Adjusted Income", Household ~ "Number in household", Depends ~ "Number of dependents", Beds ~ "Number of bedrooms", Rent ~ "Tenant Rent", Utility ~ "Utility Allowance", AdjIncTTP ~ "TTP adjusted for income", RecentTTP ~ "Most recent TTP")
+)
+buildings
+ggplot(covars, aes(AdjInc))+
+geom_histogram()
+ggplot(covars, aes(AdjInc))+
+geom_histogram(
+bins=50
+)
+summary(covars$AdjInc)
+View(covars)
+ggplot(descriptive_buildings, aes(BuildingFac, Rent))+
+geom_violin()
+ggplot(descriptive_buildings, aes(BuildingFac, Rent))+
+geom_violin()+
+theme_dark()
+ggplot(descriptive_buildings, aes(BuildingFac, Rent))+
+geom_violin()+
+theme_classic()
+ggplot(descriptive_buildings, aes(BuildingFac, Rent))+
+geom_violin()+
+theme_void()
+ggplot(descriptive_buildings, aes(BuildingFac, Rent))+
+geom_violin()+
+theme_minimal()
+ggplot(descriptive_buildings, aes(BuildingFac, Age))+
+geom_violin()+
+theme_minimal()
+ggplot(descriptive_buildings, aes(BuildingFac, Age))+
+geom_violin()+
+theme_light()
+ggplot(descriptive_buildings, aes(BuildingFac, Age))+
+geom_violin()+
+theme_classic()
+ggplot(descriptive_buildings, aes(BuildingFac, Age))+
+geom_violin()+
+theme_minimal()
+age_plot <- ggplot(descriptive_buildings, aes(BuildingFac, Age))+
+geom_violin()+
+theme_minimal()
+ggsave(age_plot, file = "/Users/victoriafisher/Dropbox (University of Michigan)/PovertySolution_2022/plots")
+ggsave(age_plot, file = "/Users/victoriafisher/Dropbox (University of Michigan)/PovertySolution_2022/plots/age_plot.jpg")
+?ggsave
+ggsave(age_plot, width = 1600, height = 900, file = "/Users/victoriafisher/Dropbox (University of Michigan)/PovertySolution_2022/plots/age_plot.jpg")
+ggsave(age_plot, width = "1600 px", height = "900 px", file = "/Users/victoriafisher/Dropbox (University of Michigan)/PovertySolution_2022/plots/age_plot.jpg")
+ggsave(age_plot, width = "1600", height = "900", units = "px" file = "/Users/victoriafisher/Dropbox (University of Michigan)/PovertySolution_2022/plots/age_plot.jpg")
+ggsave(age_plot, width = "1600", height = "900", units = "px", file = "/Users/victoriafisher/Dropbox (University of Michigan)/PovertySolution_2022/plots/age_plot.jpg")
+ggsave(age_plot, width = 1600, height = 900, dpi = 150, units = "px", file = "/Users/victoriafisher/Dropbox (University of Michigan)/PovertySolution_2022/plots/age_plot.jpg")
+ggsave(age_plot, width = 2400, height = 900, dpi = 150, units = "px", file = "/Users/victoriafisher/Dropbox (University of Michigan)/PovertySolution_2022/plots/age_plot.jpg")
+ggplot(covars, aes(AdjInc))+
+geom_histogram(
+bins=50
+)
+summary(covars$AdjInc)
+ggplot(covars, aes(Rent))+
+geom_histogram(
+bins=50
+)
+summary(covars$Rent)
+ggplot(covars, aes(AdjIncTTP))+
+geom_histogram(
+bins=50
+)
+summary(covars$AdjIncTTP)
+summary(descriptive_buildings$AdjIncTTP)
+summary(descriptive_buildings$AdjIncTTP, by = descriptive_buildings$BuildingFac)
+tapply(descriptive_buildings$AdjIncTTP, descriptive_buildings$BuildingFac, summary)
+age_plot <- ggplot(descriptive_buildings, aes(Depends, Rent))+
+geom_violin()+
+theme_minimal()
+age_plot <- ggplot(descriptive_buildings, aes(BuildingFac, Age))+
+geom_violin()+
+theme_minimal()
+ggplot(descriptive_buildings, aes(Depends, Rent))+
+geom_violin()+
+theme_minimal()
+class(descriptive_buildings$Depends)
+descriptive_buildings$Dependents <- as.factor(descriptive_buildings$Depends)
+ggplot(descriptive_buildings, aes(Dependents, Rent))+
+geom_violin()+
+theme_minimal()
+ggplot(descriptive_buildings, aes(Dependents, Rent))+
+geom_boxplot()+
+theme_minimal()
+ggsave(dependents_rent, width = 800, hieght = 600, dpi = 150, units = "px", file = "/Users/victoriafisher/Dropbox (University of Michigan)/PovertySolution_2022/plots/dep_rent.jpg")
+dependents_rent <- ggplot(descriptive_buildings, aes(Dependents, Rent))+
+geom_boxplot()+
+theme_minimal()
+ggsave(dependents_rent, width = 800, hieght = 600, dpi = 150, units = "px", file = "/Users/victoriafisher/Dropbox (University of Michigan)/PovertySolution_2022/plots/dep_rent.jpg")
+ggsave(dependents_rent, width = 800, height = 600, dpi = 150, units = "px", file = "/Users/victoriafisher/Dropbox (University of Michigan)/PovertySolution_2022/plots/dep_rent.jpg")
+ggsave(dependents_rent, width = 1200, height = 600, dpi = 150, units = "px", file = "/Users/victoriafisher/Dropbox (University of Michigan)/PovertySolution_2022/plots/dep_rent.jpg")
+ggplot(descriptive_buildings, aes(Dependents, AdjInc))+
+geom_boxplot()+
+theme_minimal()
+ggplot(descriptive_buildings, aes(Dependents, AdjInc))+
+geom_violin()+
+theme_minimal()
+ggplot(descriptive_buildings, aes(Dependents, AdjInc))+
+geom_boxplot()+
+theme_minimal()
+ggplot(descriptive_buildings, aes(Dependents, AdjIncTTP))+
+geom_boxplot()+
+theme_minimal()
+ggplot(descriptive_buildings, aes(Dependents, AdjInc))+
+geom_boxplot()+
+ylim(2500) +
+xlim(6)
+ggplot(descriptive_buildings, aes(Dependents, AdjInc))+
+geom_boxplot()+
+ylim(2500) +
+xlim(6)+
+theme_minimal()
+ggplot(descriptive_buildings, aes(Dependents, AdjInc))+
+geom_boxplot()+
+lims(x = 6, y = 2500)
+ggplot(descriptive_buildings, aes(Dependents, AdjInc))+
+geom_boxplot()+
+lims(x = 6, y = 2500) +
+theme_minimal()
+ggplot(descriptive_buildings, aes(Dependents, AdjInc))+
+geom_boxplot()+
+lims(x = c(0,6), y = c(0,2500)) +
+theme_minimal()
+ggplot(descriptive_buildings, aes(Dependents, AdjInc))+
+geom_boxplot()+
+lims(x = 6, y = 2500)) +
+ggplot(descriptive_buildings, aes(Dependents, AdjInc))+
+geom_boxplot()+
+lims(x = 6, y = 2500) +
+theme_minimal()
+ggplot(descriptive_buildings, aes(Dependents, AdjInc))+
+geom_boxplot()+
+ylim(2500)+
+theme_minimal()
+ggplot(descriptive_buildings, aes(Dependents, AdjInc))+
+geom_boxplot()+
+ylim(0, 2500)+
+theme_minimal()
+ggplot(descriptive_buildings, aes(Dependents, AdjInc))+
+geom_boxplot()+
+ylim(-Inf, 2500)+
+theme_minimal()
+ggplot(descriptive_buildings, aes(Dependents, AdjInc))+
+geom_boxplot()+
+ylim(-100, 2500)+
+theme_minimal()
+ggplot(descriptive_buildings, aes(Dependents, AdjInc))+
+geom_boxplot()+
+ylim(-500, 2500)+
+theme_minimal()
+ggplot(descriptive_buildings, aes(Dependents, AdjInc))+
+geom_boxplot()+
+theme_minimal()
+ggplot(descriptive_buildings, aes(Beds, AdjInc))+
+geom_boxplot()+
+theme_minimal()
+ggplot(descriptive_buildings, aes(Beds, Dependents))+
+geom_scatter()+
+theme_minimal()
+ggplot(descriptive_buildings, aes(Beds, Dependents))+
+geom_dotplot()+
+theme_minimal()
+ggplot(descriptive_buildings, aes(Beds, Dependents))+
+geom_point()+
+theme_minimal()
+ggplot(descriptive_buildings, aes(Beds, Dependents))+
+geom_bar()+
+theme_minimal()
+ggplot(descriptive_buildings, aes(Beds, Dependents))+
+geom_box()+
+theme_minimal()
+ggplot(descriptive_buildings, aes(Beds, Dependents))+
+geom_boxplot()+
+theme_minimal()
+ggplot(descriptive_buildings, aes(Dependents, AdjInc))+
+geom_boxplot()+
+theme_minimal()
+ggplot(descriptive_buildings, aes(Dependents, AdjInc))+
+geom_boxplot()+
+ylim(0,100000)
+ggplot(descriptive_buildings, aes(Dependents, AdjInc))+
+geom_boxplot()+
+ylim(0,50000)+
+theme_minimal()
+library(readr)
+X2022_11_22 <- read_csv("data/created_data/2022_11_22.csv")
+View(X2022_11_22)
+summary(X2022_11_22$'rent')
+View(X2022_11_22)
+library(readr)
+X2022_11_21 <- read_csv("data/created_data/2022_11_21.csv")
+View(X2022_11_21)

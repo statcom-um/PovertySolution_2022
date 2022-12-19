@@ -1,12 +1,33 @@
+## ----setup, include=FALSE, message=FALSE-----------------------------------------------------------------------
+knitr::opts_chunk$set(echo = TRUE)
+
 library(pacman)
 
 `%notin%` <- Negate(`%in%`)
 
 p_load(
   #--- Packages to Fit Models
-  MASS, logistf, survival, fastR2, 
+  MASS, logistf, survival, pROC, fastR2, broom.mixed, lmerTest,
   #--- Packages to Produce Tables
-  gtsummary, flextable, janitor, broom, officer, kableExtra, reactable, broom.mixed, lmerTest,
+  table1, gtsummary, flextable, janitor, broom, officer, kableExtra, reactable,latex2exp,
+  #--- Packages to Produce Figures
+  ggsci, ggridges, ggthemes, ggforce, ggpubr, patchwork,
+  grid, gridExtra, plotly,  survminer, viridis, ggridges,
+  hrbrthemes, stickylabeller, 
+  #--- Packages for Data Retrieval & Pre-Processing
+  readxl, here, rdrop2, lubridate, zoo, tidyverse, purrr, data.table, stringr, haven, stringr
+)
+
+
+library(pacman)
+
+`%notin%` <- Negate(`%in%`)
+
+p_load(
+  #--- Packages to Fit Models
+  MASS, logistf, survival,
+  #--- Packages to Produce Tables
+  gtsummary, flextable, janitor, broom, officer, kableExtra, reactable, 
   #--- Packages to Produce Figures
   crayon, ggsci, ggridges, ggthemes, ggforce, ggpubr, patchwork, grid, gridExtra, plotly,  survminer, viridis, ggridges, hrbrthemes, stickylabeller, latex2exp, scales, glue, 
   #--- Packages for Data Retrieval & Pre-Processing
@@ -52,24 +73,80 @@ data <- data %>% drop_na() %>%
                           prop > 1 ~ 1, 
                           TRUE ~ prop))
 
-table1(~ age + sex + n_hh + n_dep + n_br + income| name, data %>% drop_na(), 
+
+## ----table1, echo = FALSE, warning=FALSE, message=FALSE, fig.align='center'------------------------------------
+label(data$sex)       <- "Sex"
+
+label(data$age)       <- "Age"
+units(data$age)       <- "years"
+
+label(data$income)       <- "Income"
+units(data$income)       <- "$"
+
+label(data$n_hh)       <- "# in household"
+label(data$n_dep)       <- "# of dependents"
+label(data$n_br)       <- "# of bedrooms"
+
+label(data$prop) <- "Proportion of late payment"
+
+#label(melanoma2$ulcer)     <- "Ulceration"
+#label(melanoma2$thickness) <- "Thickness"
+#units(melanoma2$thickness) <- "mm"
+
+table1(~ age + sex + n_hh + n_dep + n_br + income + prop| name, data %>% drop_na(), 
        render.continuous = c(.="Mean (SD)", 
                              .="Median (IQR)", 
                              .="[Min, Max]")) 
 
-ggplotly(data %>%  
+
+## ----fig1, echo = FALSE, warning=FALSE, message=FALSE, fig.align='center', fig.height=10, fig.width=15---------
+data %>%  
   ggplot(aes(y = name, x = age, fill = name)) + 
   geom_violin(width=1.4) +
   geom_boxplot(width=0.1, color="black") +
   theme_bw() + 
   xlab("Age (years)") + 
   ylab("") + 
-  theme(legend.position = "bottom") + 
-  labs(fill = "Building"))
+  theme(legend.position = "bottom",
+        legend.box="vertical", legend.margin=margin(),
+        axis.text.x = element_text(face = "bold", size = 18),
+        axis.text.y = element_text(face = "bold", size = 18),
+        plot.title = element_text(face = "bold", size = 18),
+        plot.subtitle = element_text(size = 14),
+        #axis.text = element_text(size = 12),
+        axis.title = element_text(face = "bold", size = 18),
+        legend.title = element_text(face = "bold", size = 18),
+        legend.text = element_text(size = 18)) + 
+  labs(fill = "Building")
 
+
+## ----fig2, echo = FALSE, warning=FALSE, message=FALSE, fig.align='center', fig.height=10, fig.width=15---------
+data %>%  
+  filter(income <= 30000) %>%
+  ggplot(aes(y = name, x = income, fill = name)) + 
+  geom_violin(width=1.4) +
+  geom_boxplot(width=0.1, color="black") +
+  theme_bw() + 
+  xlab("Annual income ($)") + 
+  ylab("") + 
+  theme(legend.position = "bottom",
+        legend.box="vertical", legend.margin=margin(),
+        axis.text.x = element_text(face = "bold", size = 18),
+        axis.text.y = element_text(face = "bold", size = 18),
+        plot.title = element_text(face = "bold", size = 18),
+        plot.subtitle = element_text(size = 14),
+        #axis.text = element_text(size = 12),
+        axis.title = element_text(face = "bold", size = 18),
+        legend.title = element_text(face = "bold", size = 18),
+        legend.text = element_text(size = 18)) + 
+  labs(fill = "Building")
+
+
+## ----fig3, echo = FALSE, warning=FALSE, message=FALSE, fig.align='center', fig.height=10, fig.width=15---------
 data %>% 
   group_by(name, sex) %>% 
-  summarize(n = n()) %>%
+  summarize(n = n()) %>% 
+  ungroup() %>% 
   drop_na() %>% 
   ggplot(aes(fill = sex, x = name, y = n)) + 
   geom_bar(position="fill", stat="identity") +
@@ -90,6 +167,7 @@ data %>%
   coord_flip()
 
 
+## ----fig4, echo = FALSE, warning=FALSE, message=FALSE, fig.align='center', fig.height=10, fig.width=15---------
 data %>% 
   group_by(name, n_hh) %>% 
   summarize(n = n()) %>% 
@@ -110,10 +188,107 @@ data %>%
         axis.title = element_text(face = "bold", size = 18),
         legend.title = element_text(face = "bold", size = 18),
         legend.text = element_text(size = 18)) + 
-  labs(fill = "Sex") + 
+  labs(fill = "# in household") + 
   coord_flip()
 
-op <- tidy(lmerTest::lmer(prop ~ -1 + age + (1 | name), data = data))
+
+## ----fig5, echo = FALSE, warning=FALSE, message=FALSE, fig.align='center', fig.height=10, fig.width=15---------
+data %>% 
+  group_by(name, n_dep) %>% 
+  summarize(n = n()) %>% 
+  ungroup() %>% 
+  drop_na() %>% 
+  ggplot(aes(fill = n_dep, x = name, y = n)) + 
+  geom_bar(position="fill", stat="identity") +
+  theme_bw() + 
+  ylab("Fraction") + 
+  xlab("") + 
+  theme(legend.position = "bottom",
+        legend.box="vertical", legend.margin=margin(),
+        axis.text.x = element_text(face = "bold", size = 18),
+        axis.text.y = element_text(face = "bold", size = 18),
+        plot.title = element_text(face = "bold", size = 18),
+        plot.subtitle = element_text(size = 14),
+        #axis.text = element_text(size = 12),
+        axis.title = element_text(face = "bold", size = 18),
+        legend.title = element_text(face = "bold", size = 18),
+        legend.text = element_text(size = 18)) + 
+  labs(fill = "# of dependents") + 
+  coord_flip()
+
+
+## ----fig6, echo = FALSE, warning=FALSE, message=FALSE, fig.align='center', fig.height=10, fig.width=15---------
+data %>% 
+  group_by(name, n_br) %>% 
+  summarize(n = n()) %>% 
+  ungroup() %>% 
+  drop_na() %>% 
+  ggplot(aes(fill = n_br, x = name, y = n)) + 
+  geom_bar(position="fill", stat="identity") +
+  theme_bw() + 
+  ylab("Fraction") + 
+  xlab("") + 
+  theme(legend.position = "bottom",
+        legend.box="vertical", legend.margin=margin(),
+        axis.text.x = element_text(face = "bold", size = 18),
+        axis.text.y = element_text(face = "bold", size = 18),
+        plot.title = element_text(face = "bold", size = 18),
+        plot.subtitle = element_text(size = 14),
+        #axis.text = element_text(size = 12),
+        axis.title = element_text(face = "bold", size = 18),
+        legend.title = element_text(face = "bold", size = 18),
+        legend.text = element_text(size = 18)) + 
+  labs(fill = "# of bedrooms") + 
+  coord_flip()
+
+
+## ----fig7, echo = FALSE, warning=FALSE, message=FALSE, fig.align='center', fig.height=10, fig.width=15---------
+data %>%  
+  ggplot(aes(y = name, x = prop, fill = name)) + 
+  geom_violin(width=1.4) +
+  geom_boxplot(width=0.1, color="black") +
+  theme_bw() + 
+  xlab("Proportion of lateness") + 
+  ylab("") + 
+  theme(legend.position = "bottom",
+        legend.box="vertical", legend.margin=margin(),
+        axis.text.x = element_text(face = "bold", size = 18),
+        axis.text.y = element_text(face = "bold", size = 18),
+        plot.title = element_text(face = "bold", size = 18),
+        plot.subtitle = element_text(size = 14),
+        #axis.text = element_text(size = 12),
+        axis.title = element_text(face = "bold", size = 18),
+        legend.title = element_text(face = "bold", size = 18),
+        legend.text = element_text(size = 18)) + 
+  labs(fill = "Building")
+
+
+## ----prop_age, echo=FALSE, messages=FALSE, warning=FALSE-------------------------------------------------------
+op <- tidy(lmer(prop ~ -1 + age + (1 | name), data = data))
 op[-c(nrow(op)-1, nrow(op)), ] %>% kbl() %>% kable_paper("hover", full_width = T)
 
+
+## ----prop_sex, echo=FALSE, messages=FALSE, warning=FALSE-------------------------------------------------------
+op <- tidy(lmer(prop ~ sex + (1 | name), data = data))
+op[-c(nrow(op)-1, nrow(op)), ] %>% kbl() %>% kable_paper("hover", full_width = T)
+
+
+## ----prop_numDep, echo=FALSE, messages=FALSE, warning=FALSE----------------------------------------------------
+op <- tidy(lmer(prop ~ n_dep + (1 | name), data = data))
+op[-c(nrow(op)-1, nrow(op)), ] %>% kbl() %>% kable_paper("hover", full_width = T)
+
+
+## ----prop_numBed, echo=FALSE, messages=FALSE, warning=FALSE----------------------------------------------------
+op <- tidy(lmer(prop ~ n_br + (1 | name), data = data))
+op[-c(nrow(op)-1, nrow(op)), ] %>% kbl() %>% kable_paper("hover", full_width = T)
+
+
+## ----prop_income, echo=FALSE, messages=FALSE, warning=FALSE----------------------------------------------------
+op <- tidy(lmer(prop ~ rent + (1 | name), data = data))
+op[-c(nrow(op)-1, nrow(op)), ] %>% kbl() %>% kable_paper("hover", full_width = T)
+
+
+## ----prop_all, echo=FALSE, messages=FALSE, warning=FALSE-------------------------------------------------------
+op <- tidy(lmer(prop ~ age + sex + n_dep + rent + (1 | name), data = data))
+op[-c(nrow(op)-1, nrow(op)), ] %>% kbl() %>% kable_paper("hover", full_width = T)
 

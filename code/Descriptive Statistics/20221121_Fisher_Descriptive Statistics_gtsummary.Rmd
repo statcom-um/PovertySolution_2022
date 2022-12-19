@@ -231,3 +231,4 @@ ggplot(descriptive_buildings, aes(Dependents, AdjInc))+
 ggsave(dependents_rent, width = 1200, height = 600, dpi = 150, units = "px", file = "/Users/victoriafisher/Dropbox (University of Michigan)/PovertySolution_2022/plots/dep_rent.jpg")
 ```
 
+
